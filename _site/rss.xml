@@ -6,8 +6,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Mon, 06 Apr 2015 07:42:23 +0800</pubDate>
-    <lastBuildDate>Mon, 06 Apr 2015 07:42:23 +0800</lastBuildDate>
+    <pubDate>Mon, 06 Apr 2015 07:45:22 +0800</pubDate>
+    <lastBuildDate>Mon, 06 Apr 2015 07:45:22 +0800</lastBuildDate>
 
     
     <item>
@@ -44,22 +44,17 @@
 
 &lt;p&gt;可以通过静态方法getExternalStorageState()来获取外部存储的状态，如果程序需要在外部存储里面读写数据，必须要先判断：&lt;/p&gt;
 
-&lt;p&gt;if(Environment.MEDIA_MOUNTED.equals(&lt;/p&gt;
-
-&lt;p&gt;Environment.getExternalStorageState())&lt;/p&gt;
-
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
+      &lt;td&gt;if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt;!Environment.isExternalStorageRemovable())&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;然后，添加外部存储读和写的权限：&lt;/p&gt;
-
-&lt;p&gt;?&lt;/p&gt;
+&lt;p&gt;然后，添加外部存储读和写的权限:&lt;/p&gt;
 
 &lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;&gt;
 
@@ -82,8 +77,9 @@ DIRECTORY_ALARMS 系统提醒铃声存放的标准目录。&lt;/p&gt;
 
 &lt;p&gt;DIRECTORY_PODCASTS 系统广播存放的标准目录。&lt;/p&gt;
 
-&lt;p&gt;DIRECTORY_RINGTONES 系统铃声存放的标准目录。
-static File getDataDirectory() 获得data的目录（/data）。
+&lt;p&gt;DIRECTORY_RINGTONES 系统铃声存放的标准目录。&lt;/p&gt;
+
+&lt;p&gt;static File getDataDirectory() 获得data的目录（/data）。
 static File getDownloadCacheDirectory() 获得下载缓存目录。（/cache）
 static File getExternalStorageDirectory() 获得外部存储媒体目录。（/mnt/sdcard or /storage/sdcard0）
 static File getRootDirectory() 获得系统主目录（/system）&lt;/p&gt;

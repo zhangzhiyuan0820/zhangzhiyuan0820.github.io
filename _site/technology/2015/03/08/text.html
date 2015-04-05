@@ -87,22 +87,17 @@
 
 <p>可以通过静态方法getExternalStorageState()来获取外部存储的状态，如果程序需要在外部存储里面读写数据，必须要先判断：</p>
 
-<p>if(Environment.MEDIA_MOUNTED.equals(</p>
-
-<p>Environment.getExternalStorageState())</p>
-
 <table>
   <tbody>
     <tr>
+      <td>if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())</td>
       <td> </td>
       <td>!Environment.isExternalStorageRemovable())</td>
     </tr>
   </tbody>
 </table>
 
-<p>然后，添加外部存储读和写的权限：</p>
-
-<p>?</p>
+<p>然后，添加外部存储读和写的权限:</p>
 
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
 
@@ -125,8 +120,9 @@ DIRECTORY_ALARMS 系统提醒铃声存放的标准目录。</p>
 
 <p>DIRECTORY_PODCASTS 系统广播存放的标准目录。</p>
 
-<p>DIRECTORY_RINGTONES 系统铃声存放的标准目录。
-static File getDataDirectory() 获得data的目录（/data）。
+<p>DIRECTORY_RINGTONES 系统铃声存放的标准目录。</p>
+
+<p>static File getDataDirectory() 获得data的目录（/data）。
 static File getDownloadCacheDirectory() 获得下载缓存目录。（/cache）
 static File getExternalStorageDirectory() 获得外部存储媒体目录。（/mnt/sdcard or /storage/sdcard0）
 static File getRootDirectory() 获得系统主目录（/system）</p>
