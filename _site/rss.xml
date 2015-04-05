@@ -6,8 +6,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Mon, 06 Apr 2015 03:50:20 +0800</pubDate>
-    <lastBuildDate>Mon, 06 Apr 2015 03:50:20 +0800</lastBuildDate>
+    <pubDate>Mon, 06 Apr 2015 07:38:13 +0800</pubDate>
+    <lastBuildDate>Mon, 06 Apr 2015 07:38:13 +0800</lastBuildDate>
 
     
     <item>
@@ -16,31 +16,53 @@
       <pubDate>08 Mar 2015</pubDate>
       <author>Mark Chen</author>
       <guid>http://zhangzhiyuan0820.github.io/technology/2015/03/08/text</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+      <description>&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Android应用开发中，常使用Environment类去获取外部存储目录，在访问外部存储之前一定要先判断外部存储是否已经是可使用（已挂载&amp;amp;可使用）状态,
+并且需要在AndroidManifest.xml文件中添加外部存储读和写的权限。
+Environment类中提供了几个静态常量用于标识外部存储的状态，这些状态都是String类型
+MEDIA_BAD_REMOVAL 在没有挂载前存储媒体已经被移除。
+MEDIA_CHECKING 正在检查存储媒体。
+MEDIA_MOUNTED 存储媒体已经挂载，并且挂载点可读/写。
+MEDIA_MOUNTED_READ_ONLY 存储媒体已经挂载，挂载点只读。
+MEDIA_NOFS 存储媒体是空白或是不支持的文件系统。
+MEDIA_REMOVED 存储媒体被移除。
+MEDIA_SHARED 存储媒体正在通过USB共享。
+MEDIA_UNMOUNTABLE 存储媒体无法挂载。
+MEDIA_UNMOUNTED 存储媒体没有挂载。
+可以通过静态方法getExternalStorageState()来获取外部存储的状态，如果程序需要在外部存储里面读写数据，必须要先判断：
+if(Environment.MEDIA_MOUNTED.equals(
+Environment.getExternalStorageState()) 
+|| !Environment.isExternalStorageRemovable())
+然后，添加外部存储读和写的权限：
+?&lt;/p&gt;
+&lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;&gt;
+&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;&gt;&lt;/uses-permission&gt;&lt;/uses-permission&gt;
+&lt;p&gt;在Environment中还提供了Android标准目录的路径，以String类型提供。
+DIRECTORY_ALARMS 系统提醒铃声存放的标准目录。
+DIRECTORY_DCIM 相机拍摄照片和视频的标准目录。
+DIRECTORY_DOWNLOADS 下载的标准目录。
+DIRECTORY_MOVIES 电影存放的标准目录。
+DIRECTORY_MUSIC 音乐存放的标准目录。
+DIRECTORY_NOTIFICATIONS 系统通知铃声存放的标准目录。
+DIRECTORY_PICTURES 图片存放的标准目录
+DIRECTORY_PODCASTS 系统广播存放的标准目录。
+DIRECTORY_RINGTONES 系统铃声存放的标准目录。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;static File getDataDirectory() 获得data的目录（/data）。
+static File getDownloadCacheDirectory() 获得下载缓存目录。（/cache）
+static File getExternalStorageDirectory() 获得外部存储媒体目录。（/mnt/sdcard or /storage/sdcard0）
+static File getRootDirectory() 获得系统主目录（/system）&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了用Environment获取存储目录之外，还可以通过把路径写死的方式，比如要读取外部存储/mnt/sdcard目录下的文件，可以在程序中直接用全路径，
+但是这样做是很不好的，应该Android实在是太开放了，外部存储的目录的什么还是要固件制作商才知道，但是有一点是毋庸置疑的，就是Android框架层里面
+已经是指定好了Environment.getDownloadCacheDirectory()的返回路径。所以，尽量用这种方式来获取和存储数据，以免固件厂商不同而造成路径的差异。&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Android的实际开发中还用了两个非常重要的缓存目录，一个是应用程序自己的缓存空间，另一个是外部存储为该应该程序提供的缓存空间。有什么差别？
+使用过LruCache和DisLruCache的童鞋应该知道。
+这两个方法是通过上下文对象Context获取的，只要应用程序被卸载，这两个目录下的文件都要被清空。
+context.getCacheDir() 获取应用程序自己的缓存目录
+context.getExternalCacheDir() 获取应用程序在外部存储的存储目录&lt;/p&gt;
 
 </description>
     </item>
