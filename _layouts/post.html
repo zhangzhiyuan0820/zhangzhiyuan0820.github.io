@@ -1,7 +1,13 @@
 ---
-theme :
-  name : bootstrap-3
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/bootstrap-3/post.html %}
+<div id="post-page">
+	<h2>{{ page.title }}</h2>		
+	<span class="by-line">{{ page.date | date_to_string }}</span>
+	<div class="content">
+
+		{{ content }}
+		
+	</div>
+</div>
+
