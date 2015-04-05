@@ -1,12 +1,10 @@
 ---
-layout: post
-title: 技术
-category: technology
+layout: like
+title: 喜欢的项目
+category: like
 tags:
-- Android
-- 开源项目
-- 收藏
-keywords: Android
+- 值得研究
+keywords: 开源
 description: 
 ---
 

@@ -26,11 +26,8 @@
 
 这是修改模板最关键的一步。
 
-1. 打开 `/_layouts/index.html` 文件找到 `<ul id="tags__ul"></ul>` 部分，将 `place_your_tag_display_name_here` 
-替换成 Tag 显示名称，别忘记修改 ID 顺序，完毕之后记录 tags 顺序以及总数。
-2. 打开 `/assets/js/script.js` 找到 `// Variables` 部分，将 `place_your_tag_name_here` 替换成 tag 名称，
-这个名称需要与编辑文章时输入的 tag 一模一样，同时也需要满足 CSS 的 class 命名规则（不得已会影响命名 tag 的方式），
-顺序要与第一步匹配。
+1. 打开 `/_layouts/index.html` 文件找到 `<ul id="tags__ul"></ul>` 部分，将 `place_your_tag_display_name_here` 替换成 Tag 显示名称，别忘记修改 ID 顺序，完毕之后记录 tags 顺序以及总数。
+2. 打开 `/assets/js/script.js` 找到 `// Variables` 部分，将 `place_your_tag_name_here` 替换成 tag 名称，这个名称需要与编辑文章时输入的 tag 一模一样，同时也需要满足 CSS 的 class 命名规则（不得已会影响命名 tag 的方式），顺序要与第一步匹配。
 3. 在 js 文件中继续寻找 `// Tags switcher` 注释后面跟着的 `for`  循环，将 `i <= 6` 换成 tags 总数 + 1 (因为 No.1 是全部分类)。
 
 ### 搜索功能
