@@ -1,13 +1,13 @@
 # Site settings
-title: ÕÅĞ¡ºÀ
-description: "¸öÈË¹¤×÷¼ÇÂ¼."
-url: "http://zhangzhiyuan0820.github.io/"
+title: å¼ å°è±ª
+description: "ä¸ªäººå·¥ä½œè®°å½•"
+url: "http://zhangzhiyuan0820.github.io/blog/"
 author:
   name: "Jacopo Rabolini"
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl:  / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl:  /blog/ # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
