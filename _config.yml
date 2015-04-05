@@ -1,0 +1,15 @@
+highlighter: pygments
+
+# 作者信息
+author:
+  name: Mark Chen
+  email: zhanghao19930820@163.com
+  link: http://zhangzhiyuan0820.github.io
+  weibo: http://weibo.com/
+  github: https://github.com/zhangzhiyuan0820
+
+# 站点信息
+title: 张小豪的博客
+description: 小豪的博客
+url: http://zhangzhiyuan0820.github.io
+language: 中文
