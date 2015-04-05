@@ -1,13 +1,13 @@
 # Site settings
 title: Emerald | A simple Jekyll blog
 description: "A minimal blog template, build with Jekyll."
-url: "http://zhangzhiyuan0820.github.io"
+url: "http://zhangzhiyuan0820.github.io/"
 author:
   name: "Jacopo Rabolini"
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl:  /blog # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl:  http://zhangzhiyuan0820.github.io/ # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
