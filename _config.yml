@@ -1,13 +1,15 @@
 # Site settings
 title: 张小豪
 description: "个人工作记录"
+# 点击之后所附带的链接
 url: "http://zhangzhiyuan0820.github.io/blog"
 author:
   name: "Jacopo Rabolini"
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl:  /zhangzhiyuan0820.github.io/blog # Change this to your relative path (ex: /blog/), or leave just a /
+# 点击之后所附带的链接
+baseurl:  zhangzhiyuan0820.github.io/blog # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
