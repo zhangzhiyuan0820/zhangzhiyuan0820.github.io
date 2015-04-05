@@ -1,6 +1,6 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
+title: 张小豪
+description: "个人工作记录."
 url: "http://zhangzhiyuan0820.github.io/"
 author:
   name: "Jacopo Rabolini"
@@ -12,7 +12,7 @@ markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 8
+paginate: 10
 paginate_path: /page:num/
 
 # Default values

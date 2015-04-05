@@ -1,5 +1,5 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
+title: ’≈–°∫¿
 description: "A minimal blog template, build with Jekyll."
 url: "http://zhangzhiyuan0820.github.io/"
 author:
@@ -7,12 +7,12 @@ author:
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl:  http://zhangzhiyuan0820.github.io/ # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl:  / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 8
+paginate: 10
 paginate_path: /page:num/
 
 # Default values
