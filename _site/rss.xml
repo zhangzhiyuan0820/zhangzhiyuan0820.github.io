@@ -6,8 +6,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Mon, 06 Apr 2015 10:17:56 +0800</pubDate>
-    <lastBuildDate>Mon, 06 Apr 2015 10:17:56 +0800</lastBuildDate>
+    <pubDate>Mon, 06 Apr 2015 12:46:42 +0800</pubDate>
+    <lastBuildDate>Mon, 06 Apr 2015 12:46:42 +0800</lastBuildDate>
 
     
     <item>
@@ -176,31 +176,24 @@ context.getExternalCacheDir() 获取应用程序在外部存储的存储目录&l
       <pubDate>08 Mar 2015</pubDate>
       <author>Mark Chen</author>
       <guid>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+      <description>&lt;p&gt;我呢    是93年出生于山西 临汾 霍州市 目前未婚,所以招聘各种男女友咯&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;section&quot;&gt;性格&lt;/h3&gt;
+&lt;p&gt;    认识我的人对我的印象都挺极端的 有的说我幼稚?爱玩?成熟?稳重?不爱说话?或者挺能说的?额 这个我也不知道为什么他们对我的印象这么极端,人嘛一成不变多无聊啊 体验体验不同的性格生活嘛 
+O(∩_∩)O哈哈~&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;生活&lt;/h3&gt;
+&lt;p&gt;    生活嘛没什么好说的咯,老百姓过得都挺好的.一起喜欢打羽毛球,现在也有好些日子没有打了,跑步?不是很喜欢.散步倒还好. 逛街也不爱逛,以前还挺爱看电影电视剧的后来无聊也没有再看了,什么 你说看书,那好吧 如果你喜欢看叔的话,叔也挺喜欢看你的. O(∩_∩)O哈哈~          &lt;br /&gt;    大概初中的时候有看过一段时间的武侠,玄幻,网游…一大堆快餐文学,浪费了几年青春年华,后来嘛 大概在16岁的时候喜欢看经济学,心理学,各种杂类,总之突然不喜欢看小说了,也就在这几年看了很多励志,励欲,励心的书,改变了很多. 
+&lt;br /&gt;    我的生活对于一般人来说挺无趣的,看书,睡觉,加技能点,好像也就没什么了 不旅游,不约会,不玩游戏,不看电影电视剧,就这样我过了好几年. 但我感觉还好吧,之前看过&lt;空谷幽兰&gt;讲寻道, &lt;人生的智慧&gt;叔本华著,&lt;青年与学问&gt;说学问,目前再看&lt;正见:佛陀的证悟&gt;讲佛的,反正什么都看啊,生活嘛就这样.&lt;/正见:佛陀的证悟&gt;&lt;/青年与学问&gt;&lt;/人生的智慧&gt;&lt;/空谷幽兰&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;section-2&quot;&gt;工作&lt;/h3&gt;
+&lt;p&gt;我的工作 就是在创造和毁灭代码 一般毁灭我都会为它默哀0.001秒.手机APP啦(Android,iOS).小网站啦(J2EE),总之就是在做一些我觉得有价值的事情,人嘛总要在社会中寻求一些价值,认真且努力做好自己的每一件事情就是我对社会最大的回报.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;section-3&quot;&gt;朋友&lt;/h3&gt;
+&lt;p&gt;I Need Friend And Love &lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;  O(∩_∩)O哈哈~…………….&lt;/p&gt;
 
 </description>
     </item>
