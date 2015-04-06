@@ -109,9 +109,18 @@ a {
   border-radius: 50%;
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
   overflow: hidden;
-  display: block; }
+  display: block;
+  transition:All 0.4s ease-in-out;
+  -webkit-transition:All 0.4s ease-in-out;
+  -o-transition:All 0.4s ease-in-out;
+  -moz-transition:All 0.4s ease-in-out;
+    }
   #avatar:hover {
-     transform:scale(1.3,1.3);   }
+     	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	-ms-transform:scale(1.2);   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #avatar {
       background: url(/assets/img/avatar@2X.png);
