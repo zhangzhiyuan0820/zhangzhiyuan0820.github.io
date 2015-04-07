@@ -48,7 +48,7 @@
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
-          <a class=" pl__all" href="/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
+          <a class=" pl__all" href="/2015/03/08/Android-Environment%E7%B1%BB.html"><span class="pl__circle"></span><span class="pl__title">Android Environment类</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
         
@@ -61,15 +61,12 @@
         <!--这个页面是喜欢的应用页面 like -->
 <article id="post__content">
   <h1 id="post__title" data-identifier="20150407">个人独立博客搭建</h1>
-  <p>个人独立博客搭建</p>
+  <p>个人独立博客搭建
+WebLog 一个轻量型博客框架
+Github  分布式的版本控制系统</p>
 
-<p>WebLog 一个轻量型博客框架</p>
-
-<p>Github  分布式的版本控制系统</p>
-
-<p>好吧其实搭建之前对这两个东西都不怎么熟悉</p>
-
-<p>本着车到山前必有路的想法就开始了</p>
+<p>好吧其实搭建之前对这两个东西都不怎么熟悉
+本着车到山前必有路的想法就开始了</p>
 
 <p>首先注册一个github 账号  答案:略.
 等邮箱验证完成后你的界面应该是这个样子的
@@ -79,23 +76,21 @@
 当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称
 <img src="\assets\img\blog_img\b.png" alt="" /></p>
 
-<p>新建完成后进入你的项目页面 点击<code>Settings</code>(设置) 位置在下图 红色圆圈圈住的地方 
+<p>新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方 
 <img src="\assets\img\blog_img\c.png" alt="" /></p>
 
 <p>项目下拉看到 Github Pages 选项卡 点击图中的按钮 
  <img src="\assets\img\blog_img\d.png" alt="" /></p>
 
-<p>这是让你填写输入内容 :略</p>
-
-<p>点击图中下一步</p>
-
-<p><img src="\assets\img\blog_img\e.png" alt="" /></p>
+<p>这是让你填写输入内容 :略 
+点击图中下一步
+ <img src="\assets\img\blog_img\e.png" alt="" /></p>
 
 <p>之后会让你选择一个博客主题 这个不是我们现在阶段重点讲的 
 因为这个是我们之后说的事情, 随便选一个 点击下一步
 图片 ? 
 答:略.
-之后我们再次进入设置界面 找到之前说的 <code>GitHub Pages</code> 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
+之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
  <img src="\assets\img\blog_img\f.png" alt="" /></p>
 
 <p>然后奇迹就发生了 你会看到你之前所配置的那个主题 这个不是我们想要的东西 在这里就不详细描述了</p>
@@ -120,7 +115,7 @@
 
 <p>创建SSH key的方法很简单，执行如下命令就可以：</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">ssh</span> <span class="o">-</span><span class="n">keygen</span></code></pre></div>
+<p>ssh -keygen</p>
 
 <p>生成的SSH key文件保存在中 安装目录/.ssh/id_rsa.pub</p>
 
@@ -130,9 +125,9 @@
 
 <p>在cmd或者终端下输入以下命令行：</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="err">你的名称</span>
+<p>git config –global user.name 你的名称</p>
 
-<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="err">你的邮箱</span></code></pre></div>
+<p>git config –global user.email 你的邮箱</p>
 
 <p>回到github 界面
 它会引导你 点击加号添加项目</p>
@@ -143,7 +138,7 @@
 
 <p><img src="\assets\img\blog_img\g.png" alt="" /></p>
 
-<p>点击<code>Options…..</code></p>
+<p>点击Options…..</p>
 
 <p>之后你会进入这界面</p>
 
@@ -155,11 +150,11 @@
 
 <p>然后在这里填写你的账号:密码:</p>
 
-<p>之后<code>Log in</code> (登录)</p>
+<p>之后Log in (登录)</p>
 
 <p>到这里我们回到之前的主界面</p>
 
-<p>点击左上角的加号 添加项目 有三个选项 点击<code>Clone</code> 如下图</p>
+<p>点击左上角的加号 添加项目 有三个选项 点击Clone 如下图</p>
 
 <p><img src="\assets\img\blog_img\m.png" alt="" /></p>
 
@@ -178,7 +173,7 @@
 
 <h3 id="ruby">安装 Ruby</h3>
 
-<p>前往 <a href="http://rubyinstaller.org/downloads/">官网</a></p>
+<p>前往 http://rubyinstaller.org/downloads/</p>
 
 <p><img src="\assets\img\blog_img\p.png" alt="" /></p>
 
@@ -212,24 +207,21 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 没有则返回去下载当前系统版本的DevKit文件
 运行安装包并解压缩至某文件夹，如 C:\DevKit
 重新打开cmd
-输入</p>
+输入
+cd “C:\DevKit”
+ruby dk.rb init
+notepad config.yml</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">cd</span> <span class="err">“</span><span class="n">C</span><span class="p">:</span>\<span class="n">DevKit</span><span class="err">”</span>
-<span class="n">ruby</span> <span class="n">dk</span><span class="o">.</span><span class="n">rb</span> <span class="n">init</span>
-<span class="n">notepad</span> <span class="n">config</span><span class="o">.</span><span class="n">yml</span></code></pre></div>
-
-<p>和我这样加入 <code>- :\Ruby</code> 路径 记得要有 <code>-</code></p>
+<p>和我这样加入 - :\Ruby 路径 记得要有 ”-”</p>
 
 <p><img src="\assets\img\blog_img\r.png" alt="" /></p>
 
 <p>然后保存退出
 在cmd 里输出</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">ruby</span> <span class="n">dk</span><span class="o">.</span><span class="n">rb</span> <span class="n">review</span> 
-
-<span class="n">ruby</span> <span class="n">dk</span><span class="o">.</span><span class="n">rb</span> <span class="n">install</span></code></pre></div>
-
-<p>这两句代码的意思是 
+<p>ruby dk.rb review 
+ruby dk.rb install
+这两句代码的意思是 
 审查 和 安装。</p>
 
 <h3 id="jekyll">安装 Jekyll</h3>
@@ -237,7 +229,7 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 <p>为保证gem 已经安装
 在cmd 里输入</p>
 
-<p><code>gem –v</code></p>
+<p>gem –v</p>
 
 <p>如图所示</p>
 
@@ -245,29 +237,27 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 
 <p>然后就是安装jekyll 继续输入</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span></code></pre></div>
+<p>gem install jekyll</p>
 
 <h3 id="jekyll--">下载jekyll  主题</h3>
 
-<p><a href="http://www.google.com/">Google一下</a> 一大堆
+<p>Google一下 一大堆
 随便下 一般都是这个格式 如下图:</p>
 
 <p><img src="\assets\img\blog_img\y.png" alt="" /></p>
 
 <p>我目前这个是使用3-Jekyll 的一个延伸版本</p>
 
-<p><a href="http://jekyllthemes.org/">jekyll Themes</a>
+<p>http://jekyllthemes.org/
 这个网站有很多主题 你可以下载 当然也可以用我现在这个</p>
 
 <p>下载好后 解压缩 到你的github 项目目录下 如图我这个</p>
 
 <p><img src="\assets\img\blog_img\u.png" alt="" /></p>
 
-<p>如果想要使用这个主题的话需要更改一些参数</p>
-
-<p>1.删除.gitignore   .git</p>
-
-<p>2.更改 _config.yml</p>
+<p>如果想要使用这个主题的话需要更改一些参数
+1.删除.gitignore   .git 
+2.更改 _config.yml</p>
 
 <p><img src="\assets\img\blog_img\x.png" alt="" /></p>
 
@@ -280,15 +270,11 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 <p><img src="\assets\img\blog_img\v.png" alt="" /></p>
 
 <p>之后是本地更改和调试blog
-进入你jekyll工程所在的目录 <code>jekyll server</code> 启动服务</p>
+进入你jekyll工程所在的目录 jekyll server 启动服务</p>
 
 <p><img src="\assets\img\blog_img\w.png" alt="" /></p>
 
-<p>这是成功的案例 在本地浏览器里输入</p>
-
-<p>图片中server address :</p>
-
-<p>后面的 <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a>
+<p>这是成功的案例 在本地浏览器里输入 图片中server address : 后面的 http://127.0.0.1:4000/
 然后就可以本地调试你的博客了 记得之后 同步到云端</p>
 
 

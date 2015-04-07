@@ -48,7 +48,7 @@
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
-          <a class=" pl__all" href="/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
+          <a class=" pl__all" href="/2015/03/08/Android-Environment%E7%B1%BB.html"><span class="pl__circle"></span><span class="pl__title">Android Environment类</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
         
@@ -66,8 +66,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Tue, 07 Apr 2015 15:39:23 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 15:39:23 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Apr 2015 15:08:30 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2015 15:08:30 +0800</lastBuildDate>
 
     
     <item>
@@ -76,15 +76,12 @@
       <pubDate>07 Apr 2015</pubDate>
       <author>Mark Chen</author>
       <guid>http://zhangzhiyuan0820.github.io/technology/2015/04/07/blog</guid>
-      <description>&lt;p&gt;个人独立博客搭建&lt;/p&gt;
+      <description>&lt;p&gt;个人独立博客搭建
+WebLog 一个轻量型博客框架
+Github  分布式的版本控制系统&lt;/p&gt;
 
-&lt;p&gt;WebLog 一个轻量型博客框架&lt;/p&gt;
-
-&lt;p&gt;Github  分布式的版本控制系统&lt;/p&gt;
-
-&lt;p&gt;好吧其实搭建之前对这两个东西都不怎么熟悉&lt;/p&gt;
-
-&lt;p&gt;本着车到山前必有路的想法就开始了&lt;/p&gt;
+&lt;p&gt;好吧其实搭建之前对这两个东西都不怎么熟悉
+本着车到山前必有路的想法就开始了&lt;/p&gt;
 
 &lt;p&gt;首先注册一个github 账号  答案:略.
 等邮箱验证完成后你的界面应该是这个样子的
@@ -94,23 +91,21 @@
 当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称
 &lt;img src=&quot;\assets\img\blog_img\b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;新建完成后进入你的项目页面 点击&lt;code&gt;Settings&lt;/code&gt;(设置) 位置在下图 红色圆圈圈住的地方 
+&lt;p&gt;新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方 
 &lt;img src=&quot;\assets\img\blog_img\c.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;项目下拉看到 Github Pages 选项卡 点击图中的按钮 
  &lt;img src=&quot;\assets\img\blog_img\d.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;这是让你填写输入内容 :略&lt;/p&gt;
-
-&lt;p&gt;点击图中下一步&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;这是让你填写输入内容 :略 
+点击图中下一步
+ &lt;img src=&quot;\assets\img\blog_img\e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;之后会让你选择一个博客主题 这个不是我们现在阶段重点讲的 
 因为这个是我们之后说的事情, 随便选一个 点击下一步
 图片 ? 
 答:略.
-之后我们再次进入设置界面 找到之前说的 &lt;code&gt;GitHub Pages&lt;/code&gt; 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
+之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
  &lt;img src=&quot;\assets\img\blog_img\f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后奇迹就发生了 你会看到你之前所配置的那个主题 这个不是我们想要的东西 在这里就不详细描述了&lt;/p&gt;
@@ -135,7 +130,7 @@
 
 &lt;p&gt;创建SSH key的方法很简单，执行如下命令就可以：&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;ssh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keygen&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ssh -keygen&lt;/p&gt;
 
 &lt;p&gt;生成的SSH key文件保存在中 安装目录/.ssh/id_rsa.pub&lt;/p&gt;
 
@@ -145,9 +140,9 @@
 
 &lt;p&gt;在cmd或者终端下输入以下命令行：&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;你的名称&lt;/span&gt;
+&lt;p&gt;git config –global user.name 你的名称&lt;/p&gt;
 
-&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;你的邮箱&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;git config –global user.email 你的邮箱&lt;/p&gt;
 
 &lt;p&gt;回到github 界面
 它会引导你 点击加号添加项目&lt;/p&gt;
@@ -158,7 +153,7 @@
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;点击&lt;code&gt;Options…..&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;点击Options…..&lt;/p&gt;
 
 &lt;p&gt;之后你会进入这界面&lt;/p&gt;
 
@@ -170,11 +165,11 @@
 
 &lt;p&gt;然后在这里填写你的账号:密码:&lt;/p&gt;
 
-&lt;p&gt;之后&lt;code&gt;Log in&lt;/code&gt; (登录)&lt;/p&gt;
+&lt;p&gt;之后Log in (登录)&lt;/p&gt;
 
 &lt;p&gt;到这里我们回到之前的主界面&lt;/p&gt;
 
-&lt;p&gt;点击左上角的加号 添加项目 有三个选项 点击&lt;code&gt;Clone&lt;/code&gt; 如下图&lt;/p&gt;
+&lt;p&gt;点击左上角的加号 添加项目 有三个选项 点击Clone 如下图&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\m.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -193,7 +188,7 @@
 
 &lt;h3 id=&quot;ruby&quot;&gt;安装 Ruby&lt;/h3&gt;
 
-&lt;p&gt;前往 &lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前往 http://rubyinstaller.org/downloads/&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\p.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -227,24 +222,21 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 没有则返回去下载当前系统版本的DevKit文件
 运行安装包并解压缩至某文件夹，如 C:\DevKit
 重新打开cmd
-输入&lt;/p&gt;
+输入
+cd “C:\DevKit”
+ruby dk.rb init
+notepad config.yml&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;\&lt;span class=&quot;n&quot;&gt;DevKit&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;notepad&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yml&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;和我这样加入 &lt;code&gt;- :\Ruby&lt;/code&gt; 路径 记得要有 &lt;code&gt;-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;和我这样加入 - :\Ruby 路径 记得要有 ”-”&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\r.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后保存退出
 在cmd 里输出&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;review&lt;/span&gt; 
-
-&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;这两句代码的意思是 
+&lt;p&gt;ruby dk.rb review 
+ruby dk.rb install
+这两句代码的意思是 
 审查 和 安装。&lt;/p&gt;
 
 &lt;h3 id=&quot;jekyll&quot;&gt;安装 Jekyll&lt;/h3&gt;
@@ -252,7 +244,7 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 &lt;p&gt;为保证gem 已经安装
 在cmd 里输入&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;gem –v&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;gem –v&lt;/p&gt;
 
 &lt;p&gt;如图所示&lt;/p&gt;
 
@@ -260,29 +252,27 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 
 &lt;p&gt;然后就是安装jekyll 继续输入&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;gem install jekyll&lt;/p&gt;
 
 &lt;h3 id=&quot;jekyll--&quot;&gt;下载jekyll  主题&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.google.com/&quot;&gt;Google一下&lt;/a&gt; 一大堆
+&lt;p&gt;Google一下 一大堆
 随便下 一般都是这个格式 如下图:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\y.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我目前这个是使用3-Jekyll 的一个延伸版本&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll Themes&lt;/a&gt;
+&lt;p&gt;http://jekyllthemes.org/
 这个网站有很多主题 你可以下载 当然也可以用我现在这个&lt;/p&gt;
 
 &lt;p&gt;下载好后 解压缩 到你的github 项目目录下 如图我这个&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\u.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;如果想要使用这个主题的话需要更改一些参数&lt;/p&gt;
-
-&lt;p&gt;1.删除.gitignore   .git&lt;/p&gt;
-
-&lt;p&gt;2.更改 _config.yml&lt;/p&gt;
+&lt;p&gt;如果想要使用这个主题的话需要更改一些参数
+1.删除.gitignore   .git 
+2.更改 _config.yml&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\x.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -295,15 +285,11 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\v.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;之后是本地更改和调试blog
-进入你jekyll工程所在的目录 &lt;code&gt;jekyll server&lt;/code&gt; 启动服务&lt;/p&gt;
+进入你jekyll工程所在的目录 jekyll server 启动服务&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\w.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;这是成功的案例 在本地浏览器里输入&lt;/p&gt;
-
-&lt;p&gt;图片中server address :&lt;/p&gt;
-
-&lt;p&gt;后面的 &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;
+&lt;p&gt;这是成功的案例 在本地浏览器里输入 图片中server address : 后面的 http://127.0.0.1:4000/
 然后就可以本地调试你的博客了 记得之后 同步到云端&lt;/p&gt;
 
 </description>
@@ -408,11 +394,11 @@ O(∩_∩)O哈哈~&lt;/p&gt;
     </item>
     
     <item>
-      <title>Android Environment</title>
-      <link>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment.html</link>
+      <title>Android Environment类</title>
+      <link>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment%E7%B1%BB.html</link>
       <pubDate>08 Mar 2015</pubDate>
       <author>Mark Chen</author>
-      <guid>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment</guid>
+      <guid>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment类</guid>
       <description>&lt;p&gt;﻿—
 layout: post
 title: 技术
