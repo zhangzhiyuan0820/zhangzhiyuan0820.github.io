@@ -1,4 +1,64 @@
-<?xml version="1.0"?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+
+    <title></title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
+
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active">全部</li>
+          <li id="js-label2" class="tags__li tags-btn">技术</li>
+          <li id="js-label3" class="tags__li tags-btn">生活</li>
+          <li id="js-label4" class="tags__li tags-btn">读书</li>
+          <li id="js-label5" class="tags__li tags-btn">收藏</li>
+          <li id="js-label6" class="tags__li tags-btn">关于</li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:zhanghao19930820@163.com" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+        </div>
+      </nav> <!-- end #tags -->
+
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+
+          <div style="padding: 20px 20px 20px; font-size: 18px;font-family: inherit; color: #1B813F;
+">/* 你是你自己的导师 */</div>
+        </form>
+
+        <nav id="pl__container">
+        
+          <a class="technology pl__all" href="/technology/2015/04/07/blog.html"><span class="pl__circle"></span><span class="pl__title">个人独立博客搭建</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="like pl__all" href="/like/2015/03/08/like-list-move.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="life pl__all" href="/life/2015/03/08/life.html"><span class="pl__circle"></span><span class="pl__title">生活</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class=" pl__all" href="/2015/03/08/Android-Environment%E7%B1%BB.html"><span class="pl__circle"></span><span class="pl__title">Android Environment类</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
+        
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>张小豪的博客</title>
@@ -6,17 +66,343 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Mon, 06 Apr 2015 12:46:42 +0800</pubDate>
-    <lastBuildDate>Mon, 06 Apr 2015 12:46:42 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Apr 2015 14:45:19 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2015 14:45:19 +0800</lastBuildDate>
 
     
     <item>
-      <title>技术</title>
-      <link>http://zhangzhiyuan0820.github.io/technology/2015/03/08/text.html</link>
+      <title>个人独立博客搭建</title>
+      <link>http://zhangzhiyuan0820.github.io/technology/2015/04/07/blog.html</link>
+      <pubDate>07 Apr 2015</pubDate>
+      <author>Mark Chen</author>
+      <guid>http://zhangzhiyuan0820.github.io/technology/2015/04/07/blog</guid>
+      <description>&lt;p&gt;个人独立博客搭建
+WebLog 一个轻量型博客框架
+Github  分布式的版本控制系统&lt;/p&gt;
+
+&lt;p&gt;好吧其实搭建之前对这两个东西都不怎么熟悉
+本着车到山前必有路的想法就开始了&lt;/p&gt;
+
+&lt;p&gt;首先注册一个github 账号  答案:略.
+等邮箱验证完成后你的界面应该是这个样子的
+&lt;img src=&quot;\assets\img\blog_img\a.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击我图中用 红色圆圈 圈住的地方 new 一个新的 项目 这个项目就是你的博客项目
+当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称
+&lt;img src=&quot;\assets\img\blog_img\b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方 
+&lt;img src=&quot;\assets\img\blog_img\c.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;项目下拉看到 Github Pages 选项卡 点击图中的按钮 
+ &lt;img src=&quot;\assets\img\blog_img\d.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这是让你填写输入内容 :略 
+点击图中下一步
+ &lt;img src=&quot;\assets\img\blog_img\e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;之后会让你选择一个博客主题 这个不是我们现在阶段重点讲的 
+因为这个是我们之后说的事情, 随便选一个 点击下一步
+图片 ? 
+答:略.
+之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
+ &lt;img src=&quot;\assets\img\blog_img\f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后奇迹就发生了 你会看到你之前所配置的那个主题 这个不是我们想要的东西 在这里就不详细描述了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\j.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接下来我们就需要在你电脑上配置一下GitHub 的客户端版 下面是安装过程
+答: 略.&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;客户端安装&lt;/h3&gt;
+
+&lt;p&gt;好了 我们的客户端安装完毕后会显示这样&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\h.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当然项目你们是没有的 
+接下来是为github帐号&lt;/p&gt;
+
+&lt;h3 id=&quot;ssh-keys&quot;&gt;添加SSH keys&lt;/h3&gt;
+
+&lt;p&gt;在开始那里搜索栏输入 cmd 并打开&lt;/p&gt;
+
+&lt;p&gt;创建SSH key的方法很简单，执行如下命令就可以：&lt;/p&gt;
+
+&lt;p&gt;ssh -keygen&lt;/p&gt;
+
+&lt;p&gt;生成的SSH key文件保存在中 安装目录/.ssh/id_rsa.pub&lt;/p&gt;
+
+&lt;p&gt;接着拷贝.ssh/id_rsa.pub文件内的所以内容，将它粘帖到github帐号管理中的添加SSH key界面中。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\i.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在cmd或者终端下输入以下命令行：&lt;/p&gt;
+
+&lt;p&gt;git config –global user.name 你的名称&lt;/p&gt;
+
+&lt;p&gt;git config –global user.email 你的邮箱&lt;/p&gt;
+
+&lt;p&gt;回到github 界面
+它会引导你 点击加号添加项目&lt;/p&gt;
+
+&lt;p&gt;如果你没有登录过的话还需要点击&lt;/p&gt;
+
+&lt;p&gt;右上角的设置按钮 就是那个齿轮 会弹出类似这样&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击Options…..&lt;/p&gt;
+
+&lt;p&gt;之后你会进入这界面&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\k.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当然这个是已经登录过的 没有的话点击下面的Add 添加一个账号&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\l.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后在这里填写你的账号:密码:&lt;/p&gt;
+
+&lt;p&gt;之后Log in (登录)&lt;/p&gt;
+
+&lt;p&gt;到这里我们回到之前的主界面&lt;/p&gt;
+
+&lt;p&gt;点击左上角的加号 添加项目 有三个选项 点击Clone 如下图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\m.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里会出现你登录账号所创建的项目  选择之前我叫你创建的那个项目 之后会让你选个一个存放目录 我放在了F盘 你们随便&lt;/p&gt;
+
+&lt;p&gt;回到我们的客户端我给你们说一下 界面功能&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\n.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\o.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;好了这里就是简单的github 操作&lt;/p&gt;
+
+&lt;p&gt;接再来我们需要安装博客框架: 
+我这个是在Windows 上安装 Jekyll&lt;/p&gt;
+
+&lt;h3 id=&quot;ruby&quot;&gt;安装 Ruby&lt;/h3&gt;
+
+&lt;p&gt;前往 http://rubyinstaller.org/downloads/&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\p.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;去下载 对应系统下的ruby 文件 以及对应的系统DevKit 安装包。 例如，DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe      适用于64位 Windows 系统上的 
+Ruby 2.2.1 x64。
+然后安装 Ruby&lt;/p&gt;
+
+&lt;p&gt;将鼠标移动到之前下载好的Ruby包上&lt;/p&gt;
+
+&lt;p&gt;快速点击两下你鼠标的左键&lt;/p&gt;
+
+&lt;p&gt;O(∩_∩)O哈哈~&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下一步到这个按钮时要小心一些 官方文档中说不要使用带有空格的文件夹 这里
+我安装了一次结果不行 我选的默认路径 结果还是找不到 于是我就残暴的选择了
+C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PAHT 意思是安装过程中自动帮你把 Ruby 添加到环境变量中去&lt;/p&gt;
+
+&lt;p&gt;然后就是下一步&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\r.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;\assets\img\blog_img\r.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;安装成功之后 在开始那里搜索栏输入 cmd 并打开
+ 输入 ruby –v 查看是否安装成功 
+输出  ruby 2.2.1p85 (2015-02-26 revision 49769) [x64-mingw32] 
+则安装成功&lt;/p&gt;
+
+&lt;p&gt;接下来
+###安装DevKit&lt;/p&gt;
+
+&lt;p&gt;就是之前叫你下载ruby 时所下载的DevKit文件 
+没有则返回去下载当前系统版本的DevKit文件
+运行安装包并解压缩至某文件夹，如 C:\DevKit
+重新打开cmd
+输入
+cd “C:\DevKit”
+ruby dk.rb init
+notepad config.yml&lt;/p&gt;
+
+&lt;p&gt;和我这样加入 - :\Ruby 路径 记得要有 ”-”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\s.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后保存退出
+在cmd 里输出&lt;/p&gt;
+
+&lt;p&gt;ruby dk.rb review 
+ruby dk.rb install
+这两句代码的意思是 
+审查 和 安装。&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;安装 Jekyll&lt;/h3&gt;
+
+&lt;p&gt;为保证gem 已经安装
+在cmd 里输入&lt;/p&gt;
+
+&lt;p&gt;gem –v&lt;/p&gt;
+
+&lt;p&gt;如图所示
+&lt;img src=&quot;\assets\img\blog_img\t.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后就是安装jekyll 继续输入&lt;/p&gt;
+
+&lt;p&gt;gem install jekyll&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll--&quot;&gt;下载jekyll  主题&lt;/h3&gt;
+
+&lt;p&gt;Google一下 一大堆
+随便下 一般都是这个格式 如下图:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\u.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我目前这个是使用3-Jekyll 的一个延伸版本&lt;/p&gt;
+
+&lt;p&gt;http://jekyllthemes.org/
+这个网站有很多主题 你可以下载 当然也可以用我现在这个&lt;/p&gt;
+
+&lt;p&gt;下载好后 解压缩 到你的github 项目目录下 如图我这个&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\v.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;粘贴前记得删除你之前项目里的文件
+同步到云端 然后 类似这&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\w.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;之后是本地更改和调试blog
+进入你jekyll工程所在的目录 jekyll server 启动服务 
+ &lt;img src=&quot;\assets\img\blog_img\x.png&quot; alt=&quot;&quot; /&gt;
+这是成功的案例 在本地浏览器里输入 图片中server address : 后面的 http://127.0.0.1:4000/
+然后就可以本地调试你的博客了 记得之后 同步到云端&lt;/p&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>喜欢的项目</title>
+      <link>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move.html</link>
       <pubDate>08 Mar 2015</pubDate>
       <author>Mark Chen</author>
-      <guid>http://zhangzhiyuan0820.github.io/technology/2015/03/08/text</guid>
-      <description>&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
+      <guid>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move</guid>
+      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>生活</title>
+      <link>http://zhangzhiyuan0820.github.io/life/2015/03/08/life.html</link>
+      <pubDate>08 Mar 2015</pubDate>
+      <author>Mark Chen</author>
+      <guid>http://zhangzhiyuan0820.github.io/life/2015/03/08/life</guid>
+      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>有关于我</title>
+      <link>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me.html</link>
+      <pubDate>08 Mar 2015</pubDate>
+      <author>Mark Chen</author>
+      <guid>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me</guid>
+      <description>&lt;p&gt;我呢    是93年出生于山西 临汾 霍州市 目前未婚,所以招聘各种男女友咯&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;性格&lt;/h3&gt;
+&lt;p&gt;  认识我的人对我的印象都挺极端的 有的说我幼稚?爱玩?成熟?稳重?不爱说话?或者挺能说的?额 这个我也不知道为什么他们对我的印象这么极端,人嘛一成不变多无聊啊 体验体验不同的性格生活嘛 
+O(∩_∩)O哈哈~&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;生活&lt;/h3&gt;
+&lt;p&gt;  生活嘛没什么好说的咯,老百姓过得都挺好的.一起喜欢打羽毛球,现在也有好些日子没有打了,跑步?不是很喜欢.散步倒还好. 逛街也不爱逛,以前还挺爱看电影电视剧的后来无聊也没有再看了,什么 你说看书,那好吧 如果你喜欢看叔的话,叔也挺喜欢看你的. O(∩_∩)O哈哈~          &lt;br /&gt;  大概初中的时候有看过一段时间的武侠,玄幻,网游…一大堆快餐文学,浪费了几年青春年华,后来嘛 大概在16岁的时候喜欢看经济学,心理学,各种杂类,总之突然不喜欢看小说了,也就在这几年看了很多励志,励欲,励心的书,改变了很多. 
+&lt;br /&gt;  我的生活对于一般人来说挺无趣的,看书,睡觉,加技能点,好像也就没什么了 不旅游,不约会,不玩游戏,不看电影电视剧,就这样我过了好几年. 但我感觉还好吧,之前看过&lt;空谷幽兰&gt;讲寻道, &lt;人生的智慧&gt;叔本华著,&lt;青年与学问&gt;说学问,目前再看&lt;正见:佛陀的证悟&gt;讲佛的,反正什么都看啊,生活嘛就这样.&lt;/正见:佛陀的证悟&gt;&lt;/青年与学问&gt;&lt;/人生的智慧&gt;&lt;/空谷幽兰&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;工作&lt;/h3&gt;
+&lt;p&gt;我的工作 就是在创造和毁灭代码 一般毁灭我都会为它默哀0.001秒.手机APP啦(Android,iOS).小网站啦(J2EE),总之就是在做一些我觉得有价值的事情,人嘛总要在社会中寻求一些价值,认真且努力做好自己的每一件事情就是我对社会最大的回报.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;朋友&lt;/h3&gt;
+&lt;p&gt;I Need Friend And Love &lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;  O(∩_∩)O哈哈~…………….&lt;/p&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Android Environment类</title>
+      <link>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment%E7%B1%BB.html</link>
+      <pubDate>08 Mar 2015</pubDate>
+      <author>Mark Chen</author>
+      <guid>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment类</guid>
+      <description>&lt;p&gt;﻿—
+layout: post
+title: 技术
+category: technology
+tags:
+- Android
+- 开源项目
+- Environment
+keywords: Android
+description: 获取外部存储目录
+—&lt;/p&gt;
+
+&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
 
 &lt;p&gt;Android应用开发中，常使用Environment类去获取外部存储目录，在访问外部存储之前一定要先判断外部存储是否已经是可使用（已挂载&amp;amp;可使用）状态,&lt;/p&gt;
 
@@ -101,104 +487,6 @@ context.getExternalCacheDir() 获取应用程序在外部存储的存储目录&l
     </item>
     
     <item>
-      <title>喜欢的项目</title>
-      <link>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move.html</link>
-      <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
-      <guid>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>http://zhangzhiyuan0820.github.io/life/2015/03/08/life.html</link>
-      <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
-      <guid>http://zhangzhiyuan0820.github.io/life/2015/03/08/life</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>有关于我</title>
-      <link>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me.html</link>
-      <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
-      <guid>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me</guid>
-      <description>&lt;p&gt;我呢    是93年出生于山西 临汾 霍州市 目前未婚,所以招聘各种男女友咯&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;性格&lt;/h3&gt;
-&lt;p&gt;    认识我的人对我的印象都挺极端的 有的说我幼稚?爱玩?成熟?稳重?不爱说话?或者挺能说的?额 这个我也不知道为什么他们对我的印象这么极端,人嘛一成不变多无聊啊 体验体验不同的性格生活嘛 
-O(∩_∩)O哈哈~&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;生活&lt;/h3&gt;
-&lt;p&gt;    生活嘛没什么好说的咯,老百姓过得都挺好的.一起喜欢打羽毛球,现在也有好些日子没有打了,跑步?不是很喜欢.散步倒还好. 逛街也不爱逛,以前还挺爱看电影电视剧的后来无聊也没有再看了,什么 你说看书,那好吧 如果你喜欢看叔的话,叔也挺喜欢看你的. O(∩_∩)O哈哈~          &lt;br /&gt;    大概初中的时候有看过一段时间的武侠,玄幻,网游…一大堆快餐文学,浪费了几年青春年华,后来嘛 大概在16岁的时候喜欢看经济学,心理学,各种杂类,总之突然不喜欢看小说了,也就在这几年看了很多励志,励欲,励心的书,改变了很多. 
-&lt;br /&gt;    我的生活对于一般人来说挺无趣的,看书,睡觉,加技能点,好像也就没什么了 不旅游,不约会,不玩游戏,不看电影电视剧,就这样我过了好几年. 但我感觉还好吧,之前看过&lt;空谷幽兰&gt;讲寻道, &lt;人生的智慧&gt;叔本华著,&lt;青年与学问&gt;说学问,目前再看&lt;正见:佛陀的证悟&gt;讲佛的,反正什么都看啊,生活嘛就这样.&lt;/正见:佛陀的证悟&gt;&lt;/青年与学问&gt;&lt;/人生的智慧&gt;&lt;/空谷幽兰&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;工作&lt;/h3&gt;
-&lt;p&gt;我的工作 就是在创造和毁灭代码 一般毁灭我都会为它默哀0.001秒.手机APP啦(Android,iOS).小网站啦(J2EE),总之就是在做一些我觉得有价值的事情,人嘛总要在社会中寻求一些价值,认真且努力做好自己的每一件事情就是我对社会最大的回报.&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;朋友&lt;/h3&gt;
-&lt;p&gt;I Need Friend And Love &lt;br /&gt;
-&lt;br /&gt;
-&lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;  O(∩_∩)O哈哈~…………….&lt;/p&gt;
-
-</description>
-    </item>
-    
-    <item>
       <title>2015阅读书单</title>
       <link>http://zhangzhiyuan0820.github.io/read/2014/01/01/book-list-of-2014.html</link>
       <pubDate>01 Jan 2014</pubDate>
@@ -210,3 +498,26 @@ O(∩_∩)O哈哈~&lt;/p&gt;
     
   </channel>
 </rss>
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/jquery.pjax.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8df9f41c154d89488e1b1cc18038ab8f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+  </body>
+</html>
