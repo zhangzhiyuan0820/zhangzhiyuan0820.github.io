@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: 技术
 category: technology
