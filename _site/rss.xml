@@ -48,7 +48,7 @@
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
-          <a class=" pl__all" href="/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
+          <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
         
@@ -66,8 +66,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Tue, 07 Apr 2015 15:44:04 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 15:44:04 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Apr 2015 15:54:23 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2015 15:54:23 +0800</lastBuildDate>
 
     
     <item>
@@ -395,23 +395,11 @@ O(∩_∩)O哈哈~&lt;/p&gt;
     
     <item>
       <title>Android Environment</title>
-      <link>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment.html</link>
+      <link>http://zhangzhiyuan0820.github.io/technology/2015/03/08/Android-Environment.html</link>
       <pubDate>08 Mar 2015</pubDate>
       <author>Mark Chen</author>
-      <guid>http://zhangzhiyuan0820.github.io/2015/03/08/Android-Environment</guid>
-      <description>&lt;p&gt;﻿—
-layout: post
-title: Environment类
-category: technology
-tags:
-- Android
-- 开源项目
-- Environment
-keywords: Android
-description: 获取外部存储目录
-—&lt;/p&gt;
-
-&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
+      <guid>http://zhangzhiyuan0820.github.io/technology/2015/03/08/Android-Environment</guid>
+      <description>&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
 
 &lt;p&gt;Android应用开发中，常使用Environment类去获取外部存储目录，在访问外部存储之前一定要先判断外部存储是否已经是可使用（已挂载&amp;amp;可使用）状态,&lt;/p&gt;
 

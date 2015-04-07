@@ -1,13 +1,13 @@
-﻿---
+---
 layout: post
-title: Environment类
+title: Android Environment
 category: technology
 tags:
-- Android
-- 开源项目
-- Environment
+- 独立博客
+- github
+- jekyll
 keywords: Android
-description: 获取外部存储目录
+description: 
 ---
 
 ### Environment类
@@ -82,6 +82,21 @@ Android的实际开发中还用了两个非常重要的缓存目录，一个是�
 
 context.getCacheDir() 获取应用程序自己的缓存目录
 context.getExternalCacheDir() 获取应用程序在外部存储的存储目录
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
