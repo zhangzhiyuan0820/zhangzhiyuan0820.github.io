@@ -48,6 +48,8 @@
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
+          <a class="about pl__all" href="/about/2015/03/08/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Mar 2015</span></a>
+        
           <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
@@ -66,6 +68,12 @@
 <p>Android应用开发中，常使用Environment类去获取外部存储目录，在访问外部存储之前一定要先判断外部存储是否已经是可使用（已挂载&amp;可使用）状态,</p>
 
 <p>并且需要在AndroidManifest.xml文件中添加外部存储读和写的权限。</p>
+
+<font style="color:red">context.getCacheDir() </font>
+<p>获取应用程序自己的缓存目录</p>
+
+<font style="color:red">context.getExternalCacheDir()  </font>
+<p>获取应用程序在外部存储的存储目录</p>
 
 <p>Environment类中提供了几个静态常量用于标识外部存储的状态，这些状态都是String类型</p>
 
@@ -138,9 +146,6 @@ static File getRootDirectory() 获得系统主目录（/system）</p>
 <p>使用过LruCache和DisLruCache的童鞋应该知道。</p>
 
 <p>这两个方法是通过上下文对象Context获取的，只要应用程序被卸载，这两个目录下的文件都要被清空。</p>
-
-<p>context.getCacheDir() 获取应用程序自己的缓存目录
-context.getExternalCacheDir() 获取应用程序在外部存储的存储目录</p>
 
 
 </article> <!-- end #post__content -->

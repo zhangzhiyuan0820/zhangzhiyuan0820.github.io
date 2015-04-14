@@ -12,9 +12,15 @@ description:
 
 ### Environment类
 
+
+
 Android应用开发中，常使用Environment类去获取外部存储目录，在访问外部存储之前一定要先判断外部存储是否已经是可使用（已挂载&可使用）状态,
 
 并且需要在AndroidManifest.xml文件中添加外部存储读和写的权限。
+
+<font style="color:red">context.getCacheDir() </font>获取应用程序自己的缓存目录
+
+<font style="color:red">context.getExternalCacheDir()  </font>获取应用程序在外部存储的存储目录
 
 Environment类中提供了几个静态常量用于标识外部存储的状态，这些状态都是String类型
 
@@ -80,8 +86,6 @@ Android的实际开发中还用了两个非常重要的缓存目录，一个是�
 
 这两个方法是通过上下文对象Context获取的，只要应用程序被卸载，这两个目录下的文件都要被清空。
 
-context.getCacheDir() 获取应用程序自己的缓存目录
-context.getExternalCacheDir() 获取应用程序在外部存储的存储目录
 
 
 

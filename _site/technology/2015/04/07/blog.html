@@ -48,6 +48,8 @@
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
+          <a class="about pl__all" href="/about/2015/03/08/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Mar 2015</span></a>
+        
           <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
@@ -61,37 +63,45 @@
         <!--这个页面是喜欢的应用页面 like -->
 <article id="post__content">
   <h1 id="post__title" data-identifier="20150407">个人独立博客搭建</h1>
-  <p>个人独立博客搭建
-WebLog 一个轻量型博客框架
-Github  分布式的版本控制系统</p>
+  <p>个人独立博客搭建</p>
+
+<p>WebLog 一个轻量型博客框架</p>
+
+<p>Github  分布式的版本控制系统</p>
 
 <p>好吧其实搭建之前对这两个东西都不怎么熟悉
 本着车到山前必有路的想法就开始了</p>
 
 <p>首先注册一个github 账号  答案:略.
-等邮箱验证完成后你的界面应该是这个样子的
-<img src="\assets\img\blog_img\a.png" alt="" /></p>
+等邮箱验证完成后你的界面应该是这个样子的</p>
+
+<p><img src="\assets\img\blog_img\a.png" alt="" /></p>
 
 <p>点击我图中用 红色圆圈 圈住的地方 new 一个新的 项目 这个项目就是你的博客项目
-当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称
-<img src="\assets\img\blog_img\b.png" alt="" /></p>
+当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称</p>
 
-<p>新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方 
-<img src="\assets\img\blog_img\c.png" alt="" /></p>
+<p><img src="\assets\img\blog_img\b.png" alt="" /></p>
 
-<p>项目下拉看到 Github Pages 选项卡 点击图中的按钮 
- <img src="\assets\img\blog_img\d.png" alt="" /></p>
+<p>新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方</p>
+
+<p><img src="\assets\img\blog_img\c.png" alt="" /></p>
+
+<p>项目下拉看到 Github Pages 选项卡 点击图中的按钮</p>
+
+<p><img src="\assets\img\blog_img\d.png" alt="" /></p>
 
 <p>这是让你填写输入内容 :略 
-点击图中下一步
- <img src="\assets\img\blog_img\e.png" alt="" /></p>
+点击图中下一步</p>
+
+<p><img src="\assets\img\blog_img\e.png" alt="" /></p>
 
 <p>之后会让你选择一个博客主题 这个不是我们现在阶段重点讲的 
 因为这个是我们之后说的事情, 随便选一个 点击下一步
 图片 ? 
 答:略.
-之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
- <img src="\assets\img\blog_img\f.png" alt="" /></p>
+之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中</p>
+
+<p><img src="\assets\img\blog_img\f.png" alt="" /></p>
 
 <p>然后奇迹就发生了 你会看到你之前所配置的那个主题 这个不是我们想要的东西 在这里就不详细描述了</p>
 
@@ -173,7 +183,7 @@ Github  分布式的版本控制系统</p>
 
 <h3 id="ruby">安装 Ruby</h3>
 
-<p>前往 http://rubyinstaller.org/downloads/</p>
+<p>前往 <a href="http://rubyinstaller.org/downloads/">这里</a></p>
 
 <p><img src="\assets\img\blog_img\p.png" alt="" /></p>
 
@@ -200,8 +210,9 @@ C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PA
 输出  ruby 2.2.1p85 (2015-02-26 revision 49769) [x64-mingw32] 
 则安装成功</p>
 
-<p>接下来
-###安装DevKit</p>
+<p>接下来</p>
+
+<h3 id="devkit">安装DevKit</h3>
 
 <p>就是之前叫你下载ruby 时所下载的DevKit文件 
 没有则返回去下载当前系统版本的DevKit文件
@@ -241,15 +252,15 @@ ruby dk.rb install
 
 <h3 id="jekyll--">下载jekyll  主题</h3>
 
-<p>Google一下 一大堆
+<p><a href="https://www.google.com/?gws_rd=ssl#q=jekyll+%E4%B8%BB%E9%A2%98">Google一下</a> 一大堆
 随便下 一般都是这个格式 如下图:</p>
 
 <p><img src="\assets\img\blog_img\y.png" alt="" /></p>
 
 <p>我目前这个是使用3-Jekyll 的一个延伸版本</p>
 
-<p>http://jekyllthemes.org/
-这个网站有很多主题 你可以下载 当然也可以用我现在这个</p>
+<p><a href="http://jekyllthemes.org/">jekyll Themes</a>
+这个网站也有很多主题 你可以下载 当然也可以用我现在这个</p>
 
 <p>下载好后 解压缩 到你的github 项目目录下 如图我这个</p>
 

@@ -48,6 +48,8 @@
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
+          <a class="about pl__all" href="/about/2015/03/08/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Mar 2015</span></a>
+        
           <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
