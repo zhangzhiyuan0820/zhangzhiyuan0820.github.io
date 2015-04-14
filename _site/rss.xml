@@ -40,19 +40,19 @@
 
         <nav id="pl__container">
         
+          <a class="like pl__all" href="/like/2015/04/14/like-list-move.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="life pl__all" href="/life/2015/04/14/life.html"><span class="pl__circle"></span><span class="pl__title">生活</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="read pl__all" href="/read/2015/04/14/book-list-of-2015.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="about pl__all" href="/about/2015/04/14/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Apr 2015</span></a>
+        
           <a class="technology pl__all" href="/technology/2015/04/07/blog.html"><span class="pl__circle"></span><span class="pl__title">个人独立博客搭建</span><span class="pl__date">Apr 2015</span></a>
-        
-          <a class="like pl__all" href="/like/2015/03/08/like-list-move.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Mar 2015</span></a>
-        
-          <a class="life pl__all" href="/life/2015/03/08/life.html"><span class="pl__circle"></span><span class="pl__title">生活</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
         
-          <a class="about pl__all" href="/about/2015/03/08/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Mar 2015</span></a>
-        
           <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
-        
-          <a class="read pl__all" href="/read/2014/01/01/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Jan 2014</span></a>
         
         </nav>
       </div> <!-- end #posts-list -->
@@ -68,9 +68,157 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Tue, 14 Apr 2015 11:03:00 +0800</pubDate>
-    <lastBuildDate>Tue, 14 Apr 2015 11:03:00 +0800</lastBuildDate>
+    <pubDate>Tue, 14 Apr 2015 11:11:52 +0800</pubDate>
+    <lastBuildDate>Tue, 14 Apr 2015 11:11:52 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>喜欢的项目</title>
+      <link>http://zhangzhiyuan0820.github.io/like/2015/04/14/like-list-move.html</link>
+      <pubDate>14 Apr 2015</pubDate>
+      <author>张小豪</author>
+      <guid>http://zhangzhiyuan0820.github.io/like/2015/04/14/like-list-move</guid>
+      <description>&lt;h3 id=&quot;android-jobshttpsgithubcomandroid-cnandroid-jobs&quot;&gt;&lt;a href=&quot;https://github.com/android-cn/android-jobs&quot;&gt;android-jobs&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;android-jobs 顾名思义github上找工作用的全国各地都有,感觉这上面应该靠谱些.&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyllhttpsgithubcomp2333-jekyll&quot;&gt;&lt;a href=&quot;https://github.com/P233/3-Jekyll&quot;&gt;3-jekyll&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;我目前博客所用的jekyll框架&lt;/p&gt;
+
+&lt;h3 id=&quot;androidhttpsgithubcomtrineaandroid-open-project&quot;&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project&quot;&gt;Android开源项目分类汇总&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;好吧 这个其实是集齐了很多很多很多开源框架 其实有些时候我们需要什么只需要到这里看看就好了&lt;/p&gt;
+
+&lt;h3 id=&quot;materialdesignlibraryhttpsgithubcomnavasmdcmaterialdesignlibrary&quot;&gt;&lt;a href=&quot;https://github.com/navasmdc/MaterialDesignLibrary&quot;&gt;MaterialDesignLibrary&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Android 前端UI框架&lt;/p&gt;
+
+&lt;h3 id=&quot;flatuihttpsgithubcomeluleciflatui&quot;&gt;&lt;a href=&quot;https://github.com/eluleci/FlatUI&quot;&gt;FlatUI&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
+
+&lt;h3 id=&quot;android-bootstraphttpsgithubcombearded-henandroid-bootstrap&quot;&gt;&lt;a href=&quot;https://github.com/Bearded-Hen/Android-Bootstrap&quot;&gt;Android-Bootstrap&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>生活</title>
+      <link>http://zhangzhiyuan0820.github.io/life/2015/04/14/life.html</link>
+      <pubDate>14 Apr 2015</pubDate>
+      <author>张小豪</author>
+      <guid>http://zhangzhiyuan0820.github.io/life/2015/04/14/life</guid>
+      <description>&lt;h3 id=&quot;section&quot;&gt;2015笔记&lt;/h3&gt;
+
+&lt;p&gt;开发一个软件每个人都有自己的版本 每个人都可以更改&lt;/p&gt;
+
+&lt;p&gt;在一个人产生良知之前，折磨就是一种娱乐。
+—黑客与画家&lt;/p&gt;
+
+&lt;p&gt;打工期间被人坑，被人骗，被人打，被人骂，苦是什么滋味我最了解，我不想这样过一辈子。我也不想我喜欢的人和我一辈子这样，靠着这种动力我走到了今天，今年是只是我所有奋斗加起来收获的一年，要么成功要么就输了，输了就什么都没了，&lt;/p&gt;
+
+&lt;p&gt;熬夜与睡眠&lt;/p&gt;
+
+&lt;p&gt;知识与智慧的异同点
+在论坛中看到了有关于知识与智慧的区别，其中张公子的回答令人难忘，于是就有了这几天的思索，现在总结下 我认为知识好比是鱼，而智慧则等同于捕鱼的技术 但细想感觉又不恰当 说说我是怎么步入智慧大门之内的吧，之前知道读书总归不是什么坏事，但也不知道具体好在哪里，随着年龄的增长和阅读量的变化，慢慢觉得之前那句话是对的，量变终究会引起质变，我学会了去思考，去怀疑，去表达的自己的观点，也许这些就是智慧的基础，那么回到最初的问题 为什么感觉比喻不恰当呢，我在想第一个捕鱼的人是谁呢？好吧，我承认这个命题比较广以我现在的能力一时半会说不清楚。&lt;/p&gt;
+
+&lt;p&gt;既然时间无时无刻不在流逝着，那为什么我们不能把它消耗在一些美好的事物上呢？
+—我&lt;/p&gt;
+
+&lt;p&gt;请相信 ，你所有努力都不会白费，所有投入，终有报偿！
+—知乎 王哲&lt;/p&gt;
+
+&lt;p&gt;任何一个群体总是伴随着多数的普通人和少数的精英。-叔本华
+此刻我站在人生的十字路口上徘徊。谁都知道走这条路是对的，但我们都选择了另一条，因为这条路太TM苦了。 —知乎
+凡夫俗子只关心如何去打发时间，而略具才华的人却考虑如何应用时间。-叔本华
+有时候我也怀疑自己每年出去到底是为了什么，也许是为了多年以后在老家没事做了。躺在床上回忆着自己以前在外面闯荡，回忆着去过的城市，那里的公交站，那些操蛋的公司，还有那些为了梦想为了出人头地的朋友们。也许这就是我为什么年年回来又年年出去的原因。-Me&lt;/p&gt;
+
+&lt;p&gt;在思想和行动之间总会有诱惑。
+—康斯坦丁&lt;/p&gt;
+
+&lt;p&gt;隔层回归效应
+—我&lt;/p&gt;
+
+&lt;p&gt;我来自山西的一个小农村，想出国看一看外面的世界。
+—我&lt;/p&gt;
+
+&lt;p&gt;突然得到的东西多数不能长久的拥有。
+没有经过大量时间去积累的东西多数是不能长久的拥有。
+—我&lt;/p&gt;
+
+&lt;p&gt;每个人都只能根据自己的思想智力去明白理解他人
+—叔本华 人生的智慧 第五章第二十三节&lt;/p&gt;
+
+&lt;p&gt;诗人只有在吻到姑娘之前,才歌颂爱情。他们得到一个女人之后,就开始歌颂自由。&lt;/p&gt;
+
+&lt;p&gt;我已经尝惯人世的悲欢苦乐，因此，无论何种突如其来的变故，也不会使我像女人一样软下心来，流泪哭泣。（《终成眷属》第三幕，第二场）&lt;/p&gt;
+
+&lt;p&gt;文学 舞蹈 电影 音乐 绘画 雕塑 建筑 戏剧 
+ —八大艺术&lt;/p&gt;
+
+&lt;p&gt;很多时候看书根本不是这么回事 
+我在看一本评价很高的书时 一般是感觉写的不错但没有想象中的那么好 也许个人观念差异吧
+但有些书 作者绝对是开启了上帝视角来写书的告诉你这么多年来我的经验 说你要怎么怎么做 我当初没有这么做有多么多么后悔  书的受众群体不一样内容也自然不一样  一本书不可能兼容所有群体 当过老师的人应该懂得教授学生知识的时候应该从学生的思想出发 从学生的角度去看问题  开启上帝视角写东西是在找存在感 懂得人一点就透 不懂的人和作者即时交流也很困难 这也是看书的一点坏处 你无法从作者的一句话里了解到确切的意思以及背后的含义 当读者境界达到了自然就懂了 反而当读者还是个初学者的时候根本不懂这是什么意思继续读下去就云里雾里的 感觉读不下去也得不到什么。&lt;/p&gt;
+
+&lt;p&gt;总有一天我们会笑成一个傻逼 然后感慨时间的老去。 
+—我&lt;/p&gt;
+
+&lt;p&gt;读书分为三个阶段 
+一开始我们像出生的宝宝那样对这个世界充满了好奇 等不及要去看待这个世界，对什么都充满了兴趣。
+等到了青年时期 我们开始选择我们所喜欢的东西去看，去追逐我们理想中所认为优秀的东西。
+随着时间的发展我们着渐趋于成熟，开始接受不同的意见，用不同的眼光去看待世界，………
+这后面的话还没想好意思就是 你去看别人推荐得书，看一看别人的世界&lt;/p&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>2015阅读书单</title>
+      <link>http://zhangzhiyuan0820.github.io/read/2015/04/14/book-list-of-2015.html</link>
+      <pubDate>14 Apr 2015</pubDate>
+      <author>张小豪</author>
+      <guid>http://zhangzhiyuan0820.github.io/read/2015/04/14/book-list-of-2015</guid>
+      <description>
+</description>
+    </item>
+    
+    <item>
+      <title>博客标签测试模板</title>
+      <link>http://zhangzhiyuan0820.github.io/about/2015/04/14/about-blogText.html</link>
+      <pubDate>14 Apr 2015</pubDate>
+      <author>张小豪</author>
+      <guid>http://zhangzhiyuan0820.github.io/about/2015/04/14/about-blogText</guid>
+      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>个人独立博客搭建</title>
@@ -307,109 +455,6 @@ ruby dk.rb install
     </item>
     
     <item>
-      <title>喜欢的项目</title>
-      <link>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move.html</link>
-      <pubDate>08 Mar 2015</pubDate>
-      <author>张小豪</author>
-      <guid>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move</guid>
-      <description>&lt;h3 id=&quot;android-jobshttpsgithubcomandroid-cnandroid-jobs&quot;&gt;&lt;a href=&quot;https://github.com/android-cn/android-jobs&quot;&gt;android-jobs&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;android-jobs 顾名思义github上找工作用的全国各地都有,感觉这上面应该靠谱些.&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyllhttpsgithubcomp2333-jekyll&quot;&gt;&lt;a href=&quot;https://github.com/P233/3-Jekyll&quot;&gt;3-jekyll&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;我目前博客所用的jekyll框架&lt;/p&gt;
-
-&lt;h3 id=&quot;androidhttpsgithubcomtrineaandroid-open-project&quot;&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project&quot;&gt;Android开源项目分类汇总&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;好吧 这个其实是集齐了很多很多很多开源框架 其实有些时候我们需要什么只需要到这里看看就好了&lt;/p&gt;
-
-&lt;h3 id=&quot;materialdesignlibraryhttpsgithubcomnavasmdcmaterialdesignlibrary&quot;&gt;&lt;a href=&quot;https://github.com/navasmdc/MaterialDesignLibrary&quot;&gt;MaterialDesignLibrary&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Android 前端UI框架&lt;/p&gt;
-
-&lt;h3 id=&quot;flatuihttpsgithubcomeluleciflatui&quot;&gt;&lt;a href=&quot;https://github.com/eluleci/FlatUI&quot;&gt;FlatUI&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
-
-&lt;h3 id=&quot;android-bootstraphttpsgithubcombearded-henandroid-bootstrap&quot;&gt;&lt;a href=&quot;https://github.com/Bearded-Hen/Android-Bootstrap&quot;&gt;Android-Bootstrap&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>http://zhangzhiyuan0820.github.io/life/2015/03/08/life.html</link>
-      <pubDate>08 Mar 2015</pubDate>
-      <author>张小豪</author>
-      <guid>http://zhangzhiyuan0820.github.io/life/2015/03/08/life</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;2015笔记&lt;/h3&gt;
-
-&lt;p&gt;开发一个软件每个人都有自己的版本 每个人都可以更改&lt;/p&gt;
-
-&lt;p&gt;在一个人产生良知之前，折磨就是一种娱乐。
-—黑客与画家&lt;/p&gt;
-
-&lt;p&gt;打工期间被人坑，被人骗，被人打，被人骂，苦是什么滋味我最了解，我不想这样过一辈子。我也不想我喜欢的人和我一辈子这样，靠着这种动力我走到了今天，今年是只是我所有奋斗加起来收获的一年，要么成功要么就输了，输了就什么都没了，&lt;/p&gt;
-
-&lt;p&gt;熬夜与睡眠&lt;/p&gt;
-
-&lt;p&gt;知识与智慧的异同点
-在论坛中看到了有关于知识与智慧的区别，其中张公子的回答令人难忘，于是就有了这几天的思索，现在总结下 我认为知识好比是鱼，而智慧则等同于捕鱼的技术 但细想感觉又不恰当 说说我是怎么步入智慧大门之内的吧，之前知道读书总归不是什么坏事，但也不知道具体好在哪里，随着年龄的增长和阅读量的变化，慢慢觉得之前那句话是对的，量变终究会引起质变，我学会了去思考，去怀疑，去表达的自己的观点，也许这些就是智慧的基础，那么回到最初的问题 为什么感觉比喻不恰当呢，我在想第一个捕鱼的人是谁呢？好吧，我承认这个命题比较广以我现在的能力一时半会说不清楚。&lt;/p&gt;
-
-&lt;p&gt;既然时间无时无刻不在流逝着，那为什么我们不能把它消耗在一些美好的事物上呢？
-—我&lt;/p&gt;
-
-&lt;p&gt;请相信 ，你所有努力都不会白费，所有投入，终有报偿！
-—知乎 王哲&lt;/p&gt;
-
-&lt;p&gt;任何一个群体总是伴随着多数的普通人和少数的精英。-叔本华
-此刻我站在人生的十字路口上徘徊。谁都知道走这条路是对的，但我们都选择了另一条，因为这条路太TM苦了。 —知乎
-凡夫俗子只关心如何去打发时间，而略具才华的人却考虑如何应用时间。-叔本华
-有时候我也怀疑自己每年出去到底是为了什么，也许是为了多年以后在老家没事做了。躺在床上回忆着自己以前在外面闯荡，回忆着去过的城市，那里的公交站，那些操蛋的公司，还有那些为了梦想为了出人头地的朋友们。也许这就是我为什么年年回来又年年出去的原因。-Me&lt;/p&gt;
-
-&lt;p&gt;在思想和行动之间总会有诱惑。
-—康斯坦丁&lt;/p&gt;
-
-&lt;p&gt;隔层回归效应
-—我&lt;/p&gt;
-
-&lt;p&gt;我来自山西的一个小农村，想出国看一看外面的世界。
-—我&lt;/p&gt;
-
-&lt;p&gt;突然得到的东西多数不能长久的拥有。
-没有经过大量时间去积累的东西多数是不能长久的拥有。
-—我&lt;/p&gt;
-
-&lt;p&gt;每个人都只能根据自己的思想智力去明白理解他人
-—叔本华 人生的智慧 第五章第二十三节&lt;/p&gt;
-
-&lt;p&gt;诗人只有在吻到姑娘之前,才歌颂爱情。他们得到一个女人之后,就开始歌颂自由。&lt;/p&gt;
-
-&lt;p&gt;我已经尝惯人世的悲欢苦乐，因此，无论何种突如其来的变故，也不会使我像女人一样软下心来，流泪哭泣。（《终成眷属》第三幕，第二场）&lt;/p&gt;
-
-&lt;p&gt;文学 舞蹈 电影 音乐 绘画 雕塑 建筑 戏剧 
- —八大艺术&lt;/p&gt;
-
-&lt;p&gt;很多时候看书根本不是这么回事 
-我在看一本评价很高的书时 一般是感觉写的不错但没有想象中的那么好 也许个人观念差异吧
-但有些书 作者绝对是开启了上帝视角来写书的告诉你这么多年来我的经验 说你要怎么怎么做 我当初没有这么做有多么多么后悔  书的受众群体不一样内容也自然不一样  一本书不可能兼容所有群体 当过老师的人应该懂得教授学生知识的时候应该从学生的思想出发 从学生的角度去看问题  开启上帝视角写东西是在找存在感 懂得人一点就透 不懂的人和作者即时交流也很困难 这也是看书的一点坏处 你无法从作者的一句话里了解到确切的意思以及背后的含义 当读者境界达到了自然就懂了 反而当读者还是个初学者的时候根本不懂这是什么意思继续读下去就云里雾里的 感觉读不下去也得不到什么。&lt;/p&gt;
-
-&lt;p&gt;总有一天我们会笑成一个傻逼 然后感慨时间的老去。 
-—我&lt;/p&gt;
-
-&lt;p&gt;读书分为三个阶段 
-一开始我们像出生的宝宝那样对这个世界充满了好奇 等不及要去看待这个世界，对什么都充满了兴趣。
-等到了青年时期 我们开始选择我们所喜欢的东西去看，去追逐我们理想中所认为优秀的东西。
-随着时间的发展我们着渐趋于成熟，开始接受不同的意见，用不同的眼光去看待世界，………
-这后面的话还没想好意思就是 你去看别人推荐得书，看一看别人的世界&lt;/p&gt;
-
-</description>
-    </item>
-    
-    <item>
       <title>有关于我</title>
       <link>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me.html</link>
       <pubDate>08 Mar 2015</pubDate>
@@ -433,41 +478,6 @@ O(∩_∩)O哈哈~&lt;/p&gt;
 &lt;br /&gt;
 &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;/assets/img/xieyan.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;  O(∩_∩)O哈哈~…………….&lt;/p&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>博客标签测试模板</title>
-      <link>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-blogText.html</link>
-      <pubDate>08 Mar 2015</pubDate>
-      <author>张小豪</author>
-      <guid>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-blogText</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
-&lt;/ul&gt;
 
 </description>
     </item>
@@ -562,16 +572,6 @@ static File getRootDirectory() 获得系统主目录（/system）&lt;/p&gt;
 
 &lt;p&gt;这两个方法是通过上下文对象Context获取的，只要应用程序被卸载，这两个目录下的文件都要被清空。&lt;/p&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>2015阅读书单</title>
-      <link>http://zhangzhiyuan0820.github.io/read/2014/01/01/book-list-of-2014.html</link>
-      <pubDate>01 Jan 2014</pubDate>
-      <author>张小豪</author>
-      <guid>http://zhangzhiyuan0820.github.io/read/2014/01/01/book-list-of-2014</guid>
-      <description>
 </description>
     </item>
     
