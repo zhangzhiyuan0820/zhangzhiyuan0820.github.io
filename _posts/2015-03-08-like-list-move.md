@@ -8,32 +8,38 @@ keywords: 开源
 description: 
 ---
 
-###1
-
-`www.google.com`
-{% highlight python %}
-from datetime import date
-for year in xrange(1996,1000,-20):
-    if date(year,1,1).isoweekday() == 4:
-        print year,
-{% endhighlight %}
-[http://www.google.com](http://www.google.com)
+###[android-jobs](https://github.com/android-cn/android-jobs)
 
 
+android-jobs 顾名思义github上找工作用的全国各地都有,感觉这上面应该靠谱些.
 
-###2
+###[3-jekyll](https://github.com/P233/3-Jekyll)
 
-`test123`
+我目前博客所用的jekyll框架 
 
-[Google](http://www.google.com)
-
-
-###3
-
-`test`
+###[Android开源项目分类汇总](https://github.com/Trinea/android-open-project)
 
 
-###项目篇：
-- [Apollo音乐播放器](https://github.com/Splitter/android_packages_apps_apolloMod)：就一个播放器，但是实现的很好
+好吧 这个其实是集齐了很多很多很多开源框架 其实有些时候我们需要什么只需要到这里看看就好了
+
+###[MaterialDesignLibrary](https://github.com/navasmdc/MaterialDesignLibrary)
+
+
+Android 前端UI框架
+
+
+###[FlatUI](https://github.com/eluleci/FlatUI)
+
+
+同上  Android 前端UI框架
+
+
+
+###[Android-Bootstrap](https://github.com/Bearded-Hen/Android-Bootstrap)
+
+
+同上  Android 前端UI框架
+
+
 
 

@@ -66,15 +66,15 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Tue, 07 Apr 2015 15:54:23 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 15:54:23 +0800</lastBuildDate>
+    <pubDate>Tue, 14 Apr 2015 10:37:06 +0800</pubDate>
+    <lastBuildDate>Tue, 14 Apr 2015 10:37:06 +0800</lastBuildDate>
 
     
     <item>
       <title>个人独立博客搭建</title>
       <link>http://zhangzhiyuan0820.github.io/technology/2015/04/07/blog.html</link>
       <pubDate>07 Apr 2015</pubDate>
-      <author>Mark Chen</author>
+      <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/technology/2015/04/07/blog</guid>
       <description>&lt;p&gt;个人独立博客搭建
 WebLog 一个轻量型博客框架
@@ -84,29 +84,35 @@ Github  分布式的版本控制系统&lt;/p&gt;
 本着车到山前必有路的想法就开始了&lt;/p&gt;
 
 &lt;p&gt;首先注册一个github 账号  答案:略.
-等邮箱验证完成后你的界面应该是这个样子的
-&lt;img src=&quot;\assets\img\blog_img\a.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+等邮箱验证完成后你的界面应该是这个样子的&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\a.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点击我图中用 红色圆圈 圈住的地方 new 一个新的 项目 这个项目就是你的博客项目
-当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称
-&lt;img src=&quot;\assets\img\blog_img\b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+当然这里的名称不能随便乱起 规定是 XXX为你注册账号时的名称&lt;/p&gt;
 
-&lt;p&gt;新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方 
-&lt;img src=&quot;\assets\img\blog_img\c.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;项目下拉看到 Github Pages 选项卡 点击图中的按钮 
- &lt;img src=&quot;\assets\img\blog_img\d.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;新建完成后进入你的项目页面 点击Settings(设置) 位置在下图 红色圆圈圈住的地方&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\c.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;项目下拉看到 Github Pages 选项卡 点击图中的按钮&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\d.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这是让你填写输入内容 :略 
-点击图中下一步
- &lt;img src=&quot;\assets\img\blog_img\e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+点击图中下一步&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;之后会让你选择一个博客主题 这个不是我们现在阶段重点讲的 
 因为这个是我们之后说的事情, 随便选一个 点击下一步
 图片 ? 
 答:略.
-之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中 
- &lt;img src=&quot;\assets\img\blog_img\f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+之后我们再次进入设置界面 找到之前说的 GitHub Pages 你会看到如下图一般的一个连接地址 复制粘贴到你的浏览器地址输入栏中&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\img\blog_img\f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后奇迹就发生了 你会看到你之前所配置的那个主题 这个不是我们想要的东西 在这里就不详细描述了&lt;/p&gt;
 
@@ -299,33 +305,31 @@ ruby dk.rb install
       <title>喜欢的项目</title>
       <link>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move.html</link>
       <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
+      <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/like/2015/03/08/like-list-move</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+      <description>&lt;h3 id=&quot;android-jobshttpsgithubcomandroid-cnandroid-jobs&quot;&gt;&lt;a href=&quot;https://github.com/android-cn/android-jobs&quot;&gt;android-jobs&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;www.google.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;android-jobs 顾名思义github上找工作用的全国各地都有,感觉这上面应该靠谱些.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1996&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoweekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;jekyllhttpsgithubcomp2333-jekyll&quot;&gt;&lt;a href=&quot;https://github.com/P233/3-Jekyll&quot;&gt;3-jekyll&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我目前博客所用的jekyll框架&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
+&lt;h3 id=&quot;androidhttpsgithubcomtrineaandroid-open-project&quot;&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project&quot;&gt;Android开源项目分类汇总&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;test123&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;好吧 这个其实是集齐了很多很多很多开源框架 其实有些时候我们需要什么只需要到这里看看就好了&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;materialdesignlibraryhttpsgithubcomnavasmdcmaterialdesignlibrary&quot;&gt;&lt;a href=&quot;https://github.com/navasmdc/MaterialDesignLibrary&quot;&gt;MaterialDesignLibrary&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
+&lt;p&gt;Android 前端UI框架&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;flatuihttpsgithubcomeluleciflatui&quot;&gt;&lt;a href=&quot;https://github.com/eluleci/FlatUI&quot;&gt;FlatUI&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id=&quot;section-3&quot;&gt;项目篇：&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
+
+&lt;h3 id=&quot;android-bootstraphttpsgithubcombearded-henandroid-bootstrap&quot;&gt;&lt;a href=&quot;https://github.com/Bearded-Hen/Android-Bootstrap&quot;&gt;Android-Bootstrap&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
 
 </description>
     </item>
@@ -334,7 +338,7 @@ ruby dk.rb install
       <title>生活</title>
       <link>http://zhangzhiyuan0820.github.io/life/2015/03/08/life.html</link>
       <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
+      <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/life/2015/03/08/life</guid>
       <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
 
@@ -369,7 +373,7 @@ ruby dk.rb install
       <title>有关于我</title>
       <link>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me.html</link>
       <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
+      <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/about/2015/03/08/about-me</guid>
       <description>&lt;p&gt;我呢    是93年出生于山西 临汾 霍州市 目前未婚,所以招聘各种男女友咯&lt;/p&gt;
 
@@ -397,7 +401,7 @@ O(∩_∩)O哈哈~&lt;/p&gt;
       <title>Android Environment</title>
       <link>http://zhangzhiyuan0820.github.io/technology/2015/03/08/Android-Environment.html</link>
       <pubDate>08 Mar 2015</pubDate>
-      <author>Mark Chen</author>
+      <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/technology/2015/03/08/Android-Environment</guid>
       <description>&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
 
@@ -487,7 +491,7 @@ context.getExternalCacheDir() 获取应用程序在外部存储的存储目录&l
       <title>2015阅读书单</title>
       <link>http://zhangzhiyuan0820.github.io/read/2014/01/01/book-list-of-2014.html</link>
       <pubDate>01 Jan 2014</pubDate>
-      <author>Mark Chen</author>
+      <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/read/2014/01/01/book-list-of-2014</guid>
       <description>
 </description>
