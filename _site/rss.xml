@@ -44,7 +44,7 @@
         
           <a class="life pl__all" href="/life/2015/04/14/life.html"><span class="pl__circle"></span><span class="pl__title">生活</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="read pl__all" href="/read/2015/04/14/book-list-of-2015.html"><span class="pl__circle"></span><span class="pl__title">2015阅读书单</span><span class="pl__date">Apr 2015</span></a>
+          <a class="read pl__all" href="/read/2015/04/14/book-list-of-2015.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="about pl__all" href="/about/2015/04/14/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Apr 2015</span></a>
         
@@ -68,8 +68,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Tue, 14 Apr 2015 11:11:52 +0800</pubDate>
-    <lastBuildDate>Tue, 14 Apr 2015 11:11:52 +0800</lastBuildDate>
+    <pubDate>Fri, 17 Apr 2015 09:57:35 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Apr 2015 09:57:35 +0800</lastBuildDate>
 
     
     <item>
@@ -176,7 +176,7 @@
     </item>
     
     <item>
-      <title>2015阅读书单</title>
+      <title>2015.四月 阅读书单</title>
       <link>http://zhangzhiyuan0820.github.io/read/2015/04/14/book-list-of-2015.html</link>
       <pubDate>14 Apr 2015</pubDate>
       <author>张小豪</author>
@@ -226,7 +226,9 @@
       <pubDate>07 Apr 2015</pubDate>
       <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/technology/2015/04/07/blog</guid>
-      <description>&lt;p&gt;个人独立博客搭建&lt;/p&gt;
+      <description>&lt;p&gt;鼠标移动到滚动条会出现奇迹 你懂的…..&lt;/p&gt;
+
+&lt;p&gt;个人独立博客搭建&lt;/p&gt;
 
 &lt;p&gt;WebLog 一个轻量型博客框架&lt;/p&gt;
 
