@@ -42,7 +42,7 @@
         
           <a class="like pl__all" href="/like/2015/04/14/like-list-move.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="life pl__all" href="/life/2015/04/14/life.html"><span class="pl__circle"></span><span class="pl__title">生活</span><span class="pl__date">Apr 2015</span></a>
+          <a class="life pl__all" href="/life/2015/04/14/life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="read pl__all" href="/read/2015/04/14/book-list-of-2015.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
         
@@ -68,8 +68,8 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Fri, 17 Apr 2015 09:57:35 +0800</pubDate>
-    <lastBuildDate>Fri, 17 Apr 2015 09:57:35 +0800</lastBuildDate>
+    <pubDate>Fri, 17 Apr 2015 09:59:06 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Apr 2015 09:59:06 +0800</lastBuildDate>
 
     
     <item>
@@ -106,12 +106,12 @@
     </item>
     
     <item>
-      <title>生活</title>
+      <title>2015.4月笔记</title>
       <link>http://zhangzhiyuan0820.github.io/life/2015/04/14/life.html</link>
       <pubDate>14 Apr 2015</pubDate>
       <author>张小豪</author>
       <guid>http://zhangzhiyuan0820.github.io/life/2015/04/14/life</guid>
-      <description>&lt;h3 id=&quot;section&quot;&gt;2015笔记&lt;/h3&gt;
+      <description>&lt;h3 id=&quot;section&quot;&gt;2015.4月笔记(包括之前)&lt;/h3&gt;
 
 &lt;p&gt;开发一个软件每个人都有自己的版本 每个人都可以更改&lt;/p&gt;
 
