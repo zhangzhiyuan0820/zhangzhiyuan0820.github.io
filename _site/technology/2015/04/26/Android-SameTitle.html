@@ -42,17 +42,21 @@
         
           <a class="technology pl__all" href="/technology/2015/04/26/Android-SameTitle.html"><span class="pl__circle"></span><span class="pl__title">Android同样的标题</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="like pl__all" href="/like/2015/04/14/like-list-move.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
+          <a class="life pl__all" href="/life/2015/04/14/main-life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="life pl__all" href="/life/2015/04/14/life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
+          <a class="like pl__all" href="/like/2015/04/14/like-orglist.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="read pl__all" href="/read/2015/04/14/book-list-of-2015.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
+          <a class="read pl__all" href="/read/2015/04/14/book-2015-04.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="about pl__all" href="/about/2015/04/14/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/07/blog.html"><span class="pl__circle"></span><span class="pl__title">个人独立博客搭建</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/03/08/Android-infrastructure.html"><span class="pl__circle"></span><span class="pl__title">android 程序初期项目设计</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/03/08/Android-ThreadUtils.html"><span class="pl__circle"></span><span class="pl__title">Android ThreadUtils</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
         
@@ -71,154 +75,296 @@
 
 <p>新建 main_head.xml</p>
 
-<?xml version="1.0" encoding="utf-8"?>
-<linearlayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/main_linearlayout_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s">&quot;1.0&quot;</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="n">LinearLayout</span> <span class="nl">xmlns:</span><span class="n">android</span><span class="o">=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+	<span class="nl">android:</span><span class="n">orientation</span><span class="o">=</span><span class="s">&quot;horizontal&quot;</span> 
+	<span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">&quot;@+id/main_linearlayout_head&quot;</span>
+	<span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">&quot;fill_parent&quot;</span> 
+	<span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+	<span class="nl">android:</span><span class="n">gravity</span><span class="o">=</span><span class="s">&quot;center_vertical&quot;</span>
+	<span class="o">&gt;</span>
           
-        <button android:id="@+id/btn_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一步" android:textsize="18sp" />
+        <span class="o">&lt;</span><span class="n">Button</span>
+            <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">&quot;@+id/btn_left&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;上一步&quot;</span>
+            <span class="nl">android:</span><span class="n">textSize</span><span class="o">=</span><span class="s">&quot;18sp&quot;</span> <span class="o">/&gt;</span>
 
-        <textview android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="标题" android:textsize="18sp" />
+        <span class="o">&lt;</span><span class="n">TextView</span>
+            <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">&quot;@+id/tv_title&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">&quot;0dp&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_weight</span><span class="o">=</span><span class="s">&quot;1&quot;</span>
+            <span class="nl">android:</span><span class="n">gravity</span><span class="o">=</span><span class="s">&quot;center&quot;</span>
+            <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;标题&quot;</span>
+            <span class="nl">android:</span><span class="n">textSize</span><span class="o">=</span><span class="s">&quot;18sp&quot;</span> <span class="o">/&gt;</span>
 
-        <button android:id="@+id/btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:textsize="18sp" />
+        <span class="o">&lt;</span><span class="n">Button</span>
+            <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">&quot;@+id/btn_right&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="nl">android:</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;下一步&quot;</span>
+            <span class="nl">android:</span><span class="n">textSize</span><span class="o">=</span><span class="s">&quot;18sp&quot;</span> <span class="o">/&gt;</span>
             
-</linearlayout>
+<span class="o">&lt;/</span><span class="n">LinearLayout</span><span class="o">&gt;</span></code></pre></div>
 
 <p>接下来建立base_main.xml
  用来载入上面建立的 main_head.xml 如项目有多个不同 title bar 只需更换 include</p>
 
-<relativelayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#FFFFFF" android:orientation="vertical">
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">RelativeLayout</span> <span class="nl">xmlns:</span><span class="n">android</span><span class="o">=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">&quot;fill_parent&quot;</span>
+    <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">&quot;fill_parent&quot;</span>
+    <span class="nl">android:</span><span class="n">background</span><span class="o">=</span><span class="s">&quot;#FFFFFF&quot;</span>
+    <span class="nl">android:</span><span class="n">orientation</span><span class="o">=</span><span class="s">&quot;vertical&quot;</span> <span class="o">&gt;</span>
 
-    <include android:id="@+id/bottom" layout="@layout/main_header" />
+    <span class="o">&lt;</span><span class="n">include</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">&quot;@+id/bottom&quot;</span>
+        <span class="n">layout</span><span class="o">=</span><span class="s">&quot;@layout/main_header&quot;</span> <span class="o">/&gt;</span>
 
-    <linearlayout android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignparentbottom="true" android:layout_below="@+id/bottom" android:orientation="horizontal">
+    <span class="o">&lt;</span><span class="n">LinearLayout</span>
+        <span class="nl">android:</span><span class="n">id</span><span class="o">=</span><span class="s">&quot;@+id/content&quot;</span>
+        <span class="nl">android:</span><span class="n">layout_width</span><span class="o">=</span><span class="s">&quot;fill_parent&quot;</span>
+        <span class="nl">android:</span><span class="n">layout_height</span><span class="o">=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="nl">android:</span><span class="n">layout_alignParentBottom</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+        <span class="nl">android:</span><span class="n">layout_below</span><span class="o">=</span><span class="s">&quot;@+id/bottom&quot;</span>
+        <span class="nl">android:</span><span class="n">orientation</span><span class="o">=</span><span class="s">&quot;horizontal&quot;</span> <span class="o">&gt;</span>
 
 
 
-    </linearlayout>
+    <span class="o">&lt;/</span><span class="n">LinearLayout</span><span class="o">&gt;</span>
 
-</relativelayout>
+<span class="o">&lt;/</span><span class="n">RelativeLayout</span><span class="o">&gt;</span></code></pre></div>
 
 <p>目前 视图需要建立的activity已经完成  我们建立一个BaseActivity 来管理</p>
 
-<p>package com.minitalk.adapter;</p>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">minitalk</span><span class="o">.</span><span class="na">adapter</span><span class="o">;</span>
 
-<p>import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.Window;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
-import android.widget.TextView;</p>
+<span class="kn">import</span> <span class="nn">android.app.Activity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.content.Context</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.util.Log</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.LayoutInflater</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.Window</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.Button</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.LinearLayout</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.LinearLayout.LayoutParams</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.widget.TextView</span><span class="o">;</span>
 
-<p>import com.minitalk.avtivity.R;</p>
+<span class="kn">import</span> <span class="nn">com.minitalk.avtivity.R</span><span class="o">;</span>
 
-<p>import framework.utils.AppManager;</p>
+<span class="kn">import</span> <span class="nn">framework.utils.AppManager</span><span class="o">;</span>
 
-<p>/**
- * 继承于Activity用于以后方便管理
- *
- * @author coder
- */
-public abstract class BaseActivity extends Activity {
-    // 固定的菜单栏button
-    private Button BackButton;
-    private TextView Title;
-    private Button NextButton;</p>
+<span class="cm">/**</span>
+<span class="cm"> * 继承于Activity用于以后方便管理</span>
+<span class="cm"> *</span>
+<span class="cm"> * @author coder</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">BaseActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
+    <span class="c1">// 固定的菜单栏button</span>
+    <span class="kd">private</span> <span class="n">Button</span> <span class="n">BackButton</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">TextView</span> <span class="n">Title</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Button</span> <span class="n">NextButton</span><span class="o">;</span>
 
-<pre><code>//所填从内容的布局
-private LinearLayout ly_content;
+    <span class="c1">//所填从内容的布局</span>
+    <span class="kd">private</span> <span class="n">LinearLayout</span> <span class="n">ly_content</span><span class="o">;</span>
 
-// 内容区域的布局
-private View contentView;
+    <span class="c1">// 内容区域的布局</span>
+    <span class="kd">private</span> <span class="n">View</span> <span class="n">contentView</span><span class="o">;</span>
 
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
 
-    requestWindowFeature(Window.FEATURE_NO_TITLE);
-    setContentView(R.layout.base_main);
-    ly_content = (LinearLayout) findViewById(R.id.content);
+        <span class="n">requestWindowFeature</span><span class="o">(</span><span class="n">Window</span><span class="o">.</span><span class="na">FEATURE_NO_TITLE</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">base_main</span><span class="o">);</span>
+        <span class="n">ly_content</span> <span class="o">=</span> <span class="o">(</span><span class="n">LinearLayout</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">content</span><span class="o">);</span>
 
-    BackButton = (Button) findViewById(R.id.btn_left);
-    Title = (TextView) findViewById(R.id.tv_title);
-    NextButton = (Button) findViewById(R.id.btn_right);
+        <span class="n">BackButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_left</span><span class="o">);</span>
+        <span class="n">Title</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">tv_title</span><span class="o">);</span>
+        <span class="n">NextButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_right</span><span class="o">);</span>
 
-}
+    <span class="o">}</span>
 
-/**
- * 得到View的 内容
- *
- * @return
- */
-public View getLyContentView() {
-    return contentView;
-}
-/**
- * 设置内容区域
- *
- * @param view View对象
- */
-public void setContentLayout(View view) {
-    if (null != ly_content) {
-        ly_content.addView(view);
-    }
-}
+    <span class="cm">/**</span>
+<span class="cm">     * 得到View的 内容</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">View</span> <span class="nf">getLyContentView</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">contentView</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="cm">/**</span>
+<span class="cm">     * 设置内容区域</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param view View对象</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setContentLayout</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">!=</span> <span class="n">ly_content</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">ly_content</span><span class="o">.</span><span class="na">addView</span><span class="o">(</span><span class="n">view</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 
-/**
- * 设置内容区域
- *
- * @param resId 资源文件ID
- */
-public View setContentLayout(int resId) {
-    LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-    contentView = inflater.inflate(resId, null);
+    <span class="cm">/**</span>
+<span class="cm">     * 设置内容区域</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param resId 资源文件ID</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">View</span> <span class="nf">setContentLayout</span><span class="o">(</span><span class="kt">int</span> <span class="n">resId</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">LayoutInflater</span> <span class="n">inflater</span> <span class="o">=</span> <span class="o">(</span><span class="n">LayoutInflater</span><span class="o">)</span> <span class="n">getSystemService</span><span class="o">(</span><span class="n">Context</span><span class="o">.</span><span class="na">LAYOUT_INFLATER_SERVICE</span><span class="o">);</span>
+        <span class="n">contentView</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">resId</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
 
-    LayoutParams layoutParams = new LayoutParams(LayoutParams.FILL_PARENT,
-            LayoutParams.MATCH_PARENT);
+        <span class="n">LayoutParams</span> <span class="n">layoutParams</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">LayoutParams</span><span class="o">(</span><span class="n">LayoutParams</span><span class="o">.</span><span class="na">FILL_PARENT</span><span class="o">,</span>
+                <span class="n">LayoutParams</span><span class="o">.</span><span class="na">MATCH_PARENT</span><span class="o">);</span>
 
-    contentView.setLayoutParams(layoutParams);
-    if (null != ly_content) {
+        <span class="n">contentView</span><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="n">layoutParams</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">!=</span> <span class="n">ly_content</span><span class="o">)</span> <span class="o">{</span>
 
-        ly_content.addView(contentView);
-        // 添加Activity到堆栈
-        AppManager.getAppManager().addActivity(this);
-        Log.v("AppManager",
-                "AppManager 添加actiivty！！" + this.getLocalClassName());
-    }
-    return contentView;
-}
+            <span class="n">ly_content</span><span class="o">.</span><span class="na">addView</span><span class="o">(</span><span class="n">contentView</span><span class="o">);</span>
+            <span class="c1">// 添加Activity到堆栈</span>
+            <span class="n">AppManager</span><span class="o">.</span><span class="na">getAppManager</span><span class="o">().</span><span class="na">addActivity</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+            <span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">&quot;AppManager&quot;</span><span class="o">,</span>
+                    <span class="s">&quot;AppManager 添加actiivty！！&quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">getLocalClassName</span><span class="o">());</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">contentView</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="cm">/**</span>
+<span class="cm">     * 用来管理点击事件</span>
+<span class="cm">    * */</span>
+    <span class="kd">protected</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">leftbnt</span><span class="o">();</span>
+    <span class="kd">protected</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">rightbnt</span><span class="o">();</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">leftbnt</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">leftbnt</span><span class="o">();</span>
+    <span class="o">}</span>
 
-/**
- * 用来管理点击事件
-* */
-protected abstract void leftbnt();
-protected abstract void rightbnt();
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">rightbnt</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">rightbnt</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="cm">/**</span>
+<span class="cm">     * 设置右上角的button消失</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setnextgone</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">NextButton</span><span class="o">.</span><span class="na">setVisibility</span><span class="o">(</span><span class="n">View</span><span class="o">.</span><span class="na">INVISIBLE</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="cm">/**</span>
+<span class="cm">     * 设置标题</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">settitle</span><span class="o">(</span><span class="n">String</span> <span class="n">title</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Title</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">title</span><span class="o">);</span>
+    <span class="o">}</span>
 
-public void leftbnt(View view) {
-    leftbnt();
-}
 
-public void rightbnt(View view) {
-    rightbnt();
-}
-/**
- * 设置右上角的button消失
- */
-public void setnextgone() {
-    NextButton.setVisibility(View.INVISIBLE);
-}
-/**
- * 设置标题
- */
-public void settitle(String title) {
-    Title.setText(title);
-}
-</code></pre>
 
-<p>}</p>
+
+<span class="o">}</span></code></pre></div>
+
+<p>用于管理 activityStacks</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">zh_title</span><span class="o">;</span>
+
+
+<span class="kn">import</span> <span class="nn">java.util.Stack</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.app.Activity</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.app.ActivityManager</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.content.Context</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AppManager</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Activity</span> <span class="n">context</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Activity</span><span class="o">&gt;</span> <span class="n">activityStack</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">AppManager</span> <span class="n">instance</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="nf">AppManager</span><span class="o">()</span> <span class="o">{</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 单一实例</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">AppManager</span> <span class="nf">getAppManager</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">AppManager</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 添加Activity到堆栈</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addActivity</span><span class="o">(</span><span class="n">Activity</span> <span class="n">activity</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">activityStack</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">activityStack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Activity</span><span class="o">&gt;();</span>
+        <span class="o">}</span>
+        <span class="n">activityStack</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">activity</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 获取当前Activity（堆栈中最后一个压入的）</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">Activity</span> <span class="nf">currentActivity</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Activity</span> <span class="n">activity</span> <span class="o">=</span> <span class="n">activityStack</span><span class="o">.</span><span class="na">lastElement</span><span class="o">();</span>
+        <span class="k">return</span> <span class="n">activity</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 结束当前Activity（堆栈中最后一个压入的）</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">finishActivity</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Activity</span> <span class="n">activity</span> <span class="o">=</span> <span class="n">activityStack</span><span class="o">.</span><span class="na">lastElement</span><span class="o">();</span>
+        <span class="n">finishActivity</span><span class="o">(</span><span class="n">activity</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 结束指定的Activity</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">finishActivity</span><span class="o">(</span><span class="n">Activity</span> <span class="n">activity</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">activity</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">activityStack</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">activity</span><span class="o">);</span>
+            <span class="n">activity</span><span class="o">.</span><span class="na">finish</span><span class="o">();</span>
+            <span class="n">activity</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 结束指定类名的Activity</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">finishActivity</span><span class="o">(</span><span class="n">Class</span><span class="o">&lt;?&gt;</span> <span class="n">cls</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="n">Activity</span> <span class="n">activity</span> <span class="o">:</span> <span class="n">activityStack</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">activity</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="n">cls</span><span class="o">))</span> <span class="o">{</span>
+                <span class="n">finishActivity</span><span class="o">(</span><span class="n">activity</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 结束所有Activity</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">finishAllActivity</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">,</span> <span class="n">size</span> <span class="o">=</span> <span class="n">activityStack</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">!=</span> <span class="n">activityStack</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">))</span> <span class="o">{</span>
+                <span class="n">activityStack</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">finish</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">activityStack</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * 退出应用程序</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">AppExit</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">finishAllActivity</span><span class="o">();</span>
+            <span class="n">ActivityManager</span> <span class="n">activityMgr</span> <span class="o">=</span> <span class="o">(</span><span class="n">ActivityManager</span><span class="o">)</span> <span class="n">context</span>
+                    <span class="o">.</span><span class="na">getSystemService</span><span class="o">(</span><span class="n">Context</span><span class="o">.</span><span class="na">ACTIVITY_SERVICE</span><span class="o">);</span>
+            <span class="n">activityMgr</span><span class="o">.</span><span class="na">restartPackage</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">getPackageName</span><span class="o">());</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
 
 
 </article> <!-- end #post__content -->

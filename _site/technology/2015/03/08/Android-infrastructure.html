@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>有关于我</title>
+    <title>android 程序初期项目设计</title>
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -68,33 +68,121 @@
       <div id="pjax">
         <!--这个页面是喜欢的应用页面 like -->
 <article id="post__content">
-  <h1 id="post__title" data-identifier="20150308">有关于我</h1>
-  <p>我呢    是93年出生于山西 临汾 霍州市 目前未婚,所以招聘各种男女友咯</p>
+  <h1 id="post__title" data-identifier="20150308">android 程序初期项目设计</h1>
+  <h3 id="android-">android 程序初期项目设计</h3>
 
-<h3 id="section">性格</h3>
-<p>  认识我的人对我的印象都挺极端的 有的说我幼稚?爱玩?成熟?稳重?不爱说话?或者挺能说的?额 这个我也不知道为什么他们对我的印象这么极端,人嘛一成不变多无聊啊 体验体验不同的性格生活嘛 
-O(∩_∩)O哈哈~</p>
+<p>1 框架说明</p>
 
-<h3 id="section-1">生活</h3>
-<p>  生活嘛没什么好说的咯,老百姓过得都挺好的.一起喜欢打羽毛球,现在也有好些日子没有打了,跑步?不是很喜欢.散步倒还好. 逛街也不爱逛,以前还挺爱看电影电视剧的后来无聊也没有再看了,什么 你说看书,那好吧 如果你喜欢看叔的话,叔也挺喜欢看你的. O(∩_∩)O哈哈~          <br />  大概初中的时候有看过一段时间的武侠,玄幻,网游…一大堆快餐文学,浪费了几年青春年华,后来嘛 大概在16岁的时候喜欢看经济学,心理学,各种杂类,总之突然不喜欢看小说了,也就在这几年看了很多励志,励欲,励心的书,改变了很多. 
-<br />  我的生活对于一般人来说挺无趣的,看书,睡觉,加技能点,好像也就没什么了 不旅游,不约会,不玩游戏,不看电影电视剧,就这样我过了好几年. 但我感觉还好吧,之前看过<空谷幽兰>讲寻道, <人生的智慧>叔本华著,<青年与学问>说学问,目前再看<正见:佛陀的证悟>讲佛的,反正什么都看啊,生活嘛就这样.</正见:佛陀的证悟></青年与学问></人生的智慧></空谷幽兰></p>
+<pre><code>定义基于http协议通讯文档
 
-<h3 id="section-2">工作</h3>
-<p>我的工作 就是在创造和毁灭代码 一般毁灭我都会为它默哀0.001秒.手机APP啦(Android,iOS).小网站啦(J2EE),总之就是在做一些我觉得有价值的事情,人嘛总要在社会中寻求一些价值,认真且努力做好自己的每一件事情就是我对社会最大的回报.</p>
+建立json数据传输解析格式
 
-<h3 id="section-3">朋友</h3>
-<p>I Need Friend And Love <br />
-<br />
-<img src="/assets/img/xieyan.png" alt="" /> <img src="/assets/img/xieyan.png" alt="" /> <img src="/assets/img/xieyan.png" alt="" /> <img src="/assets/img/xieyan.png" alt="" /> <img src="/assets/img/xieyan.png" alt="" /> <img src="/assets/img/xieyan.png" alt="" />
-<br /><br />  O(∩_∩)O哈哈~…………….</p>
+以及字符编码(UTF-8) 
+</code></pre>
+
+<p>APP主要模块设计</p>
+
+<pre><code>framework
+
+view试图
+
+业务逻辑模块
+
+本地数据模块
+
+工具类
+
+Model
+
+Server
+
+Service
+
+Adapter
+
+Activity
+
+Sharedpreferences
+
+Utils
+</code></pre>
+
+<p>以及在项目开发过程中共同特性设计</p>
+
+<pre><code>编码一直
+
+整体APP风格 例如:UI,色调,ListView
+
+项目结构统一调用
+
+以及各种开发文档
+</code></pre>
+
+<p>Widget</p>
+
+<pre><code>TextView
+
+EditText
+
+Button
+
+Title Bar
+
+自定义view
+
+尽量做到UI统一可复用性强
+</code></pre>
+
+<p>Adapter Items</p>
+
+<pre><code>项目中所要显示的item
+
+以及初期一些优化
+</code></pre>
+
+<p>BaseActivity</p>
+
+<pre><code>需设计一个BaseActivity 之后所有的Activity 均继承于此
+
+onCreate 方法里增加 以及它们的抽象类 如果需要可以封装点击事件	findViews();
+
+intViews();
+
+setlisteners();
+</code></pre>
+
+<p>设计application类</p>
+
+<pre><code>存储全局数据;
+</code></pre>
+
+<p>设计异常类</p>
+
+<pre><code>设计自义定异常
+
+以及系统抛出的异常类
+
+标注的使用
+
+在项目过程中如有不同的类 不要删除 标注为@Depercated 即可
+</code></pre>
+
+<p>项目需使用的开源框架和开放接口</p>
+
+<pre><code>Android-Universal-Image-Loader
+
+xutils
+
+BaiduLBS_Android
+</code></pre>
 
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//about/2015/03/08/about-me.html&text=有关于我" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/03/08/Android-infrastructure.html&text=android 程序初期项目设计" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//about/2015/03/08/about-me.html&title=有关于我" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/03/08/Android-infrastructure.html&title=android 程序初期项目设计" target="_blank"></a>
 </div> <!-- end #post__share -->
 
 <div id="disqus_thread"></div>
