@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+
+    <title>Android Popupwindow</title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
+
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active">全部</li>
+          <li id="js-label2" class="tags__li tags-btn">技术</li>
+          <li id="js-label3" class="tags__li tags-btn">生活</li>
+          <li id="js-label4" class="tags__li tags-btn">读书</li>
+          <li id="js-label5" class="tags__li tags-btn">收藏</li>
+          <li id="js-label6" class="tags__li tags-btn">关于</li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:zhanghao19930820@163.com" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+        </div>
+      </nav> <!-- end #tags -->
+
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+
+          <div style="padding: 20px 20px 20px; font-size: 18px;font-family: inherit; color: #1B813F;
+">/* 你是你自己的导师 */</div>
+        </form>
+
+        <nav id="pl__container">
+        
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-infrastructure.html"><span class="pl__circle"></span><span class="pl__title">android 程序初期项目设计</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-ThreadUtils.html"><span class="pl__circle"></span><span class="pl__title">Android ThreadUtils</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-SameTitle.html"><span class="pl__circle"></span><span class="pl__title">Android同样的标题</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-Popupwindow.html"><span class="pl__circle"></span><span class="pl__title">Android Popupwindow</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-Baidu.html"><span class="pl__circle"></span><span class="pl__title">Android 百度翻译api接口调用</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="life pl__all" href="/life/2015/04/14/main-life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="like pl__all" href="/like/2015/04/14/like-orglist.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="read pl__all" href="/read/2015/04/14/book-2015-04.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="about pl__all" href="/about/2015/04/14/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/04/07/blog.html"><span class="pl__circle"></span><span class="pl__title">个人独立博客搭建</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="about pl__all" href="/about/2015/03/08/about-me.html"><span class="pl__circle"></span><span class="pl__title">有关于我</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
+        
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <!--这个页面是喜欢的应用页面 like -->
+<article id="post__content">
+  <h1 id="post__title" data-identifier="20150426">Android Popupwindow</h1>
+  <h3 id="popupwindow">popupwindow</h3>
+
+<p>popupwindow主要是用于弹出一个悬浮在页面上的提示框 可自拟定属性较多</p>
+
+<p>动画,大小,位置,背景等等</p>
+
+<p>在项目中styles.xml添加</p>
+
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;popupAnimation&quot;</span> <span class="na">parent=</span><span class="s">&quot;android:Animation&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:windowEnterAnimation&quot;</span><span class="nt">&gt;</span>@anim/more_open<span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:windowExitAnimation&quot;</span><span class="nt">&gt;</span>@anim/more_close<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;/style&gt;</span></code></pre></div>
+
+<p>more_open 开始动画</p>
+
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;set</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;translate</span>
+        <span class="na">android:fromYDelta=</span><span class="s">&quot;100%p&quot;</span>
+        <span class="na">android:toYDelta=</span><span class="s">&quot;0&quot;</span>
+        <span class="na">android:duration=</span><span class="s">&quot;100&quot;</span>
+        <span class="nt">/&gt;</span>
+<span class="nt">&lt;/set&gt;</span></code></pre></div>
+
+<p>more_open 结束动画</p>
+
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;set</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;translate</span>
+        <span class="na">android:fromYDelta=</span><span class="s">&quot;0&quot;</span>
+        <span class="na">android:toYDelta=</span><span class="s">&quot;100%p&quot;</span>
+        <span class="na">android:duration=</span><span class="s">&quot;100&quot;</span>
+        <span class="nt">/&gt;</span>
+<span class="nt">&lt;/set&gt;</span></code></pre></div>
+
+<p>java 方法</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">PopupWindow</span> <span class="n">mPopupWindow</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">showpop</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 屏幕的width</span>
+        <span class="kt">int</span> <span class="n">mScreenWidth</span><span class="o">;</span>
+        
+        <span class="c1">// 屏幕的height</span>
+        <span class="kt">int</span> <span class="n">mScreenHeight</span><span class="o">;</span>
+
+        <span class="c1">// PopupWindow的width</span>
+        <span class="kt">int</span> <span class="n">mPopupWindowWidth</span><span class="o">;</span>
+
+        <span class="c1">// PopupWindow的height</span>
+        <span class="kt">int</span> <span class="n">mPopupWindowHeight</span><span class="o">;</span>
+
+        <span class="n">View</span> <span class="n">popupWindow</span> <span class="o">=</span> <span class="n">LayoutInflater</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">v</span><span class="o">.</span><span class="na">getContext</span><span class="o">()).</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">dialog_more</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+
+        <span class="n">Button</span> <span class="n">shield</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">popupWindow</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">hall_bon_shield</span><span class="o">);</span>
+        <span class="n">Button</span> <span class="n">report</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">popupWindow</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">hall_bon_report</span><span class="o">);</span>
+        <span class="n">Button</span> <span class="n">collection</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">popupWindow</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">hall_bon_collection</span><span class="o">);</span>
+        <span class="n">Button</span> <span class="n">tvCancel</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">popupWindow</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">hall_bon_off</span><span class="o">);</span>
+        <span class="n">tvCancel</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">dismiss</span><span class="o">();</span>
+
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+
+
+        <span class="n">mScreenWidth</span> <span class="o">=</span> <span class="n">ScreenUtils</span><span class="o">.</span><span class="na">getScreenWidth</span><span class="o">(</span><span class="n">v</span><span class="o">.</span><span class="na">getContext</span><span class="o">());</span>
+        <span class="n">mScreenHeight</span> <span class="o">=</span> <span class="n">ScreenUtils</span><span class="o">.</span><span class="na">getScreenHeight</span><span class="o">(</span><span class="n">v</span><span class="o">.</span><span class="na">getContext</span><span class="o">());</span>
+        <span class="n">mPopupWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">PopupWindow</span><span class="o">(</span><span class="n">popupWindow</span><span class="o">,</span> <span class="n">mScreenWidth</span><span class="o">,</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">.</span><span class="na">WRAP_CONTENT</span><span class="o">);</span>
+        <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">setAnimationStyle</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">style</span><span class="o">.</span><span class="na">popupAnimation</span><span class="o">);</span>
+        <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">setOutsideTouchable</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">setFocusable</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">setBackgroundDrawable</span><span class="o">(</span><span class="k">new</span> <span class="nf">ColorDrawable</span><span class="o">(</span><span class="mi">0</span><span class="o">));</span>
+        <span class="n">mPopupWindowWidth</span> <span class="o">=</span> <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">getWidth</span><span class="o">();</span>
+        <span class="n">mPopupWindowHeight</span> <span class="o">=</span> <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">getHeight</span><span class="o">();</span>
+        <span class="n">mPopupWindow</span><span class="o">.</span><span class="na">showAtLocation</span><span class="o">(</span><span class="n">v</span><span class="o">,</span> <span class="n">Gravity</span><span class="o">.</span><span class="na">BOTTOM</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+
+    <span class="o">}</span></code></pre></div>
+
+
+</article> <!-- end #post__content -->
+
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/04/26/Android-Popupwindow.html&text=Android Popupwindow" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/04/26/Android-Popupwindow.html&title=Android Popupwindow" target="_blank"></a>
+</div> <!-- end #post__share -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'zhangxiaohao'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+<p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
+
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/jquery.pjax.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8df9f41c154d89488e1b1cc18038ab8f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+  </body>
+</html>

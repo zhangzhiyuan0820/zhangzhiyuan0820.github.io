@@ -10,7 +10,6 @@ keywords: Android
 description: 
 ---
 
-### Environment类
 
 由于项目需求 要求某几个Activity统一标题栏
 
