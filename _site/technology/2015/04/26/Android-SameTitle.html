@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>Android Environment</title>
+    <title>Android同样的标题</title>
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -64,98 +64,169 @@
       <div id="pjax">
         <!--这个页面是喜欢的应用页面 like -->
 <article id="post__content">
-  <h1 id="post__title" data-identifier="20150308">Android Environment</h1>
+  <h1 id="post__title" data-identifier="20150426">Android同样的标题</h1>
   <h3 id="environment">Environment类</h3>
 
-<p>Android应用开发中，常使用Environment类去获取外部存储目录，在访问外部存储之前一定要先判断外部存储是否已经是可使用（已挂载&amp;可使用）状态,</p>
+<p>由于项目需求 要求某几个Activity统一标题栏</p>
 
-<p>并且需要在AndroidManifest.xml文件中添加外部存储读和写的权限。</p>
+<p>新建 main_head.xml</p>
 
-<font style="color:red">context.getCacheDir() </font>
-<p>获取应用程序自己的缓存目录</p>
+<?xml version="1.0" encoding="utf-8"?>
+<linearlayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/main_linearlayout_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+          
+        <button android:id="@+id/btn_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一步" android:textsize="18sp" />
 
-<font style="color:red">context.getExternalCacheDir()  </font>
-<p>获取应用程序在外部存储的存储目录</p>
+        <textview android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="标题" android:textsize="18sp" />
 
-<p>Environment类中提供了几个静态常量用于标识外部存储的状态，这些状态都是String类型</p>
+        <button android:id="@+id/btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:textsize="18sp" />
+            
+</linearlayout>
 
-<p>MEDIA_BAD_REMOVAL 在没有挂载前存储媒体已经被移除。</p>
+<p>接下来建立base_main.xml
+ 用来载入上面建立的 main_head.xml 如项目有多个不同 title bar 只需更换 include</p>
 
-<p>MEDIA_CHECKING 正在检查存储媒体。</p>
+<relativelayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#FFFFFF" android:orientation="vertical">
 
-<p>MEDIA_MOUNTED 存储媒体已经挂载，并且挂载点可读/写。</p>
+    <include android:id="@+id/bottom" layout="@layout/main_header" />
 
-<p>MEDIA_MOUNTED_READ_ONLY 存储媒体已经挂载，挂载点只读。</p>
+    <linearlayout android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignparentbottom="true" android:layout_below="@+id/bottom" android:orientation="horizontal">
 
-<p>MEDIA_NOFS 存储媒体是空白或是不支持的文件系统。</p>
 
-<p>MEDIA_REMOVED 存储媒体被移除。</p>
 
-<p>MEDIA_SHARED 存储媒体正在通过USB共享。</p>
+    </linearlayout>
 
-<p>MEDIA_UNMOUNTABLE 存储媒体无法挂载。</p>
+</relativelayout>
 
-<p>MEDIA_UNMOUNTED 存储媒体没有挂载。</p>
+<p>目前 视图需要建立的activity已经完成  我们建立一个BaseActivity 来管理</p>
 
-<p>可以通过静态方法getExternalStorageState()来获取外部存储的状态，如果程序需要在外部存储里面读写数据，必须要先判断：</p>
+<p>package com.minitalk.adapter;</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())</td>
-      <td> </td>
-      <td>!Environment.isExternalStorageRemovable())</td>
-    </tr>
-  </tbody>
-</table>
+<p>import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView;</p>
 
-<p>然后，添加外部存储读和写的权限:</p>
+<p>import com.minitalk.avtivity.R;</p>
 
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
+<p>import framework.utils.AppManager;</p>
 
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission></uses-permission>
+<p>/**
+ * 继承于Activity用于以后方便管理
+ *
+ * @author coder
+ */
+public abstract class BaseActivity extends Activity {
+    // 固定的菜单栏button
+    private Button BackButton;
+    private TextView Title;
+    private Button NextButton;</p>
 
-<p>在Environment中还提供了Android标准目录的路径，以String类型提供。
-DIRECTORY_ALARMS 系统提醒铃声存放的标准目录。</p>
+<pre><code>//所填从内容的布局
+private LinearLayout ly_content;
 
-<p>DIRECTORY_DCIM 相机拍摄照片和视频的标准目录。</p>
+// 内容区域的布局
+private View contentView;
 
-<p>DIRECTORY_DOWNLOADS 下载的标准目录。</p>
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
 
-<p>DIRECTORY_MOVIES 电影存放的标准目录。</p>
+    requestWindowFeature(Window.FEATURE_NO_TITLE);
+    setContentView(R.layout.base_main);
+    ly_content = (LinearLayout) findViewById(R.id.content);
 
-<p>DIRECTORY_MUSIC 音乐存放的标准目录。</p>
+    BackButton = (Button) findViewById(R.id.btn_left);
+    Title = (TextView) findViewById(R.id.tv_title);
+    NextButton = (Button) findViewById(R.id.btn_right);
 
-<p>DIRECTORY_NOTIFICATIONS 系统通知铃声存放的标准目录。</p>
+}
 
-<p>DIRECTORY_PICTURES 图片存放的标准目录</p>
+/**
+ * 得到View的 内容
+ *
+ * @return
+ */
+public View getLyContentView() {
+    return contentView;
+}
+/**
+ * 设置内容区域
+ *
+ * @param view View对象
+ */
+public void setContentLayout(View view) {
+    if (null != ly_content) {
+        ly_content.addView(view);
+    }
+}
 
-<p>DIRECTORY_PODCASTS 系统广播存放的标准目录。</p>
+/**
+ * 设置内容区域
+ *
+ * @param resId 资源文件ID
+ */
+public View setContentLayout(int resId) {
+    LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    contentView = inflater.inflate(resId, null);
 
-<p>DIRECTORY_RINGTONES 系统铃声存放的标准目录。</p>
+    LayoutParams layoutParams = new LayoutParams(LayoutParams.FILL_PARENT,
+            LayoutParams.MATCH_PARENT);
 
-<p>static File getDataDirectory() 获得data的目录（/data）。
-static File getDownloadCacheDirectory() 获得下载缓存目录。（/cache）
-static File getExternalStorageDirectory() 获得外部存储媒体目录。（/mnt/sdcard or /storage/sdcard0）
-static File getRootDirectory() 获得系统主目录（/system）</p>
+    contentView.setLayoutParams(layoutParams);
+    if (null != ly_content) {
 
-<p>除了用Environment获取存储目录之外，还可以通过把路径写死的方式，比如要读取外部存储/mnt/sdcard目录下的文件，可以在程序中直接用全路径，
-但是这样做是很不好的，应该Android实在是太开放了，外部存储的目录的什么还是要固件制作商才知道，但是有一点是毋庸置疑的，就是Android框架层里面
-已经是指定好了Environment.getDownloadCacheDirectory()的返回路径。所以，尽量用这种方式来获取和存储数据，以免固件厂商不同而造成路径的差异。</p>
+        ly_content.addView(contentView);
+        // 添加Activity到堆栈
+        AppManager.getAppManager().addActivity(this);
+        Log.v("AppManager",
+                "AppManager 添加actiivty！！" + this.getLocalClassName());
+    }
+    return contentView;
+}
 
-<p>Android的实际开发中还用了两个非常重要的缓存目录，一个是应用程序自己的缓存空间，另一个是外部存储为该应该程序提供的缓存空间。有什么差别？</p>
+/**
+ * 用来管理点击事件
+* */
+protected abstract void leftbnt();
+protected abstract void rightbnt();
 
-<p>使用过LruCache和DisLruCache的童鞋应该知道。</p>
+public void leftbnt(View view) {
+    leftbnt();
+}
 
-<p>这两个方法是通过上下文对象Context获取的，只要应用程序被卸载，这两个目录下的文件都要被清空。</p>
+public void rightbnt(View view) {
+    rightbnt();
+}
+/**
+ * 设置右上角的button消失
+ */
+public void setnextgone() {
+    NextButton.setVisibility(View.INVISIBLE);
+}
+/**
+ * 设置标题
+ */
+public void settitle(String title) {
+    Title.setText(title);
+}
+</code></pre>
+
+<p>}</p>
 
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/03/08/Android-Environment.html&text=Android Environment" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/04/26/Android-SameTitle.html&text=Android同样的标题" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/03/08/Android-Environment.html&title=Android Environment" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/04/26/Android-SameTitle.html&title=Android同样的标题" target="_blank"></a>
 </div> <!-- end #post__share -->
 
 <div id="disqus_thread"></div>

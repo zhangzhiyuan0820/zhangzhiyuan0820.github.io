@@ -40,6 +40,8 @@
 
         <nav id="pl__container">
         
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-SameTitle.html"><span class="pl__circle"></span><span class="pl__title">Android同样的标题</span><span class="pl__date">Apr 2015</span></a>
+        
           <a class="like pl__all" href="/like/2015/04/14/like-list-move.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="life pl__all" href="/life/2015/04/14/life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
@@ -68,9 +70,173 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Fri, 17 Apr 2015 09:59:06 +0800</pubDate>
-    <lastBuildDate>Fri, 17 Apr 2015 09:59:06 +0800</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 14:45:49 +0800</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 14:45:49 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Android同样的标题</title>
+      <link>http://zhangzhiyuan0820.github.io/technology/2015/04/26/Android-SameTitle.html</link>
+      <pubDate>26 Apr 2015</pubDate>
+      <author>张小豪</author>
+      <guid>http://zhangzhiyuan0820.github.io/technology/2015/04/26/Android-SameTitle</guid>
+      <description>&lt;h3 id=&quot;environment&quot;&gt;Environment类&lt;/h3&gt;
+
+&lt;p&gt;由于项目需求 要求某几个Activity统一标题栏&lt;/p&gt;
+
+&lt;p&gt;新建 main_head.xml&lt;/p&gt;
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;linearlayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:orientation=&quot;horizontal&quot; android:id=&quot;@+id/main_linearlayout_head&quot; android:layout_width=&quot;fill_parent&quot; android:layout_height=&quot;wrap_content&quot; android:gravity=&quot;center_vertical&quot;&gt;
+          
+        &lt;button android:id=&quot;@+id/btn_left&quot; android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;上一步&quot; android:textsize=&quot;18sp&quot; /&gt;
+
+        &lt;textview android:id=&quot;@+id/tv_title&quot; android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:gravity=&quot;center&quot; android:text=&quot;标题&quot; android:textsize=&quot;18sp&quot; /&gt;
+
+        &lt;button android:id=&quot;@+id/btn_right&quot; android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;下一步&quot; android:textsize=&quot;18sp&quot; /&gt;
+            
+&lt;/linearlayout&gt;
+
+&lt;p&gt;接下来建立base_main.xml
+ 用来载入上面建立的 main_head.xml 如项目有多个不同 title bar 只需更换 include&lt;/p&gt;
+
+&lt;relativelayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:layout_width=&quot;fill_parent&quot; android:layout_height=&quot;fill_parent&quot; android:background=&quot;#FFFFFF&quot; android:orientation=&quot;vertical&quot;&gt;
+
+    &lt;include android:id=&quot;@+id/bottom&quot; layout=&quot;@layout/main_header&quot; /&gt;
+
+    &lt;linearlayout android:id=&quot;@+id/content&quot; android:layout_width=&quot;fill_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_alignparentbottom=&quot;true&quot; android:layout_below=&quot;@+id/bottom&quot; android:orientation=&quot;horizontal&quot;&gt;
+
+
+
+    &lt;/linearlayout&gt;
+
+&lt;/relativelayout&gt;
+
+&lt;p&gt;目前 视图需要建立的activity已经完成  我们建立一个BaseActivity 来管理&lt;/p&gt;
+
+&lt;p&gt;package com.minitalk.adapter;&lt;/p&gt;
+
+&lt;p&gt;import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView;&lt;/p&gt;
+
+&lt;p&gt;import com.minitalk.avtivity.R;&lt;/p&gt;
+
+&lt;p&gt;import framework.utils.AppManager;&lt;/p&gt;
+
+&lt;p&gt;/**
+ * 继承于Activity用于以后方便管理
+ *
+ * @author coder
+ */
+public abstract class BaseActivity extends Activity {
+    // 固定的菜单栏button
+    private Button BackButton;
+    private TextView Title;
+    private Button NextButton;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//所填从内容的布局
+private LinearLayout ly_content;
+
+// 内容区域的布局
+private View contentView;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    requestWindowFeature(Window.FEATURE_NO_TITLE);
+    setContentView(R.layout.base_main);
+    ly_content = (LinearLayout) findViewById(R.id.content);
+
+    BackButton = (Button) findViewById(R.id.btn_left);
+    Title = (TextView) findViewById(R.id.tv_title);
+    NextButton = (Button) findViewById(R.id.btn_right);
+
+}
+
+/**
+ * 得到View的 内容
+ *
+ * @return
+ */
+public View getLyContentView() {
+    return contentView;
+}
+/**
+ * 设置内容区域
+ *
+ * @param view View对象
+ */
+public void setContentLayout(View view) {
+    if (null != ly_content) {
+        ly_content.addView(view);
+    }
+}
+
+/**
+ * 设置内容区域
+ *
+ * @param resId 资源文件ID
+ */
+public View setContentLayout(int resId) {
+    LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    contentView = inflater.inflate(resId, null);
+
+    LayoutParams layoutParams = new LayoutParams(LayoutParams.FILL_PARENT,
+            LayoutParams.MATCH_PARENT);
+
+    contentView.setLayoutParams(layoutParams);
+    if (null != ly_content) {
+
+        ly_content.addView(contentView);
+        // 添加Activity到堆栈
+        AppManager.getAppManager().addActivity(this);
+        Log.v(&quot;AppManager&quot;,
+                &quot;AppManager 添加actiivty！！&quot; + this.getLocalClassName());
+    }
+    return contentView;
+}
+
+/**
+ * 用来管理点击事件
+* */
+protected abstract void leftbnt();
+protected abstract void rightbnt();
+
+public void leftbnt(View view) {
+    leftbnt();
+}
+
+public void rightbnt(View view) {
+    rightbnt();
+}
+/**
+ * 设置右上角的button消失
+ */
+public void setnextgone() {
+    NextButton.setVisibility(View.INVISIBLE);
+}
+/**
+ * 设置标题
+ */
+public void settitle(String title) {
+    Title.setText(title);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+</description>
+    </item>
     
     <item>
       <title>喜欢的项目</title>
