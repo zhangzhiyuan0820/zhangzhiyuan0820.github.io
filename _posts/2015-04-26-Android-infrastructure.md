@@ -72,6 +72,8 @@ Widget
 	自定义view
 
 	尽量做到UI统一可复用性强
+	
+	尤其是一些共同的组件 只要在项目中出现次数超过3次的都采用include 引入
 
 	
 Adapter Items

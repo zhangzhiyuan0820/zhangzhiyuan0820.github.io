@@ -40,6 +40,8 @@
 
         <nav id="pl__container">
         
+          <a class="technology pl__all" href="/technology/2015/05/04/%E4%B8%93%E6%B3%A8%E5%8A%9B.html"><span class="pl__circle"></span><span class="pl__title">Focus</span><span class="pl__date">May 2015</span></a>
+        
           <a class="technology pl__all" href="/technology/2015/04/26/Android-infrastructure.html"><span class="pl__circle"></span><span class="pl__title">android 程序初期项目设计</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/26/Android-ThreadUtils.html"><span class="pl__circle"></span><span class="pl__title">Android ThreadUtils</span><span class="pl__date">Apr 2015</span></a>
@@ -57,6 +59,8 @@
           <a class="read pl__all" href="/read/2015/04/14/book-2015-04.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="about pl__all" href="/about/2015/04/14/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="life pl__all" href="/life/2015/04/14/Movie-Life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/07/blog.html"><span class="pl__circle"></span><span class="pl__title">个人独立博客搭建</span><span class="pl__date">Apr 2015</span></a>
         
