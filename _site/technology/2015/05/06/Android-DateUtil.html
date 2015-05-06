@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>Android ThreadUtils</title>
+    <title>Android dateUtils</title>
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -78,76 +78,68 @@
       <div id="pjax">
         <!--这个页面是喜欢的应用页面 like -->
 <article id="post__content">
-  <h1 id="post__title" data-identifier="20150426">Android ThreadUtils</h1>
-  <h3 id="threadutils">ThreadUtils</h3>
+  <h1 id="post__title" data-identifier="20150506">Android dateUtils</h1>
+  <p>时间差 :</p>
 
-<p>项目中有一些网络访问链接需要请求 每次开一个线程 还要写个handler比较麻烦 就想方便一些
-于是就看看能不能写个工具类 将线程和一些可复用性强的东西写下来</p>
+<p>由于现在项目在做一个论坛类的APP</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">创建一个类</span> <span class="n">继承Runnadle</span>
+<p>所发送的帖子需要显示时间距离现在过了多少</p>
 
+<p>所以顺手写了个工具类</p>
 
-<span class="n">基本</span> <span class="n">参数</span>
-    <span class="cm">/** handler处理 */</span>
-    <span class="kd">private</span> <span class="n">Handler</span> <span class="n">handler</span><span class="o">;</span>
-    <span class="cm">/** 网络请求地址 */</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">url</span><span class="o">;</span>
-    <span class="cm">/** index */</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">index</span><span class="o">;</span>
+<p>代码注释什么的都有我在这里就不废话了</p>
 
-
-
-   <span class="cm">/**</span>
-<span class="cm">     * 构造方法</span>
-<span class="cm">     *</span>
-<span class="cm">     * @param handler</span>
-<span class="cm">     *            消息对象</span>
-<span class="cm">     * @param url</span>
-<span class="cm">     *            请求的url地址</span>
-<span class="cm">	 * @param index</span>
-<span class="cm">     *            唯一标示</span>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="cm">/**</span>
+<span class="cm">     * 将长时间格式字符串转换为时间 yyyy-MM-dd HH:mm:ss</span>
+<span class="cm">     * @param strDate</span>
+<span class="cm">     * @return</span>
 <span class="cm">     */</span>
-    <span class="kd">public</span> <span class="nf">HttpPostThread</span><span class="o">(</span><span class="n">Handler</span> <span class="n">handler</span><span class="o">,</span> <span class="n">String</span> <span class="n">url</span><span class="o">,</span><span class="kt">int</span> <span class="n">index</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">handler</span> <span class="o">=</span> <span class="n">handler</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">url</span> <span class="o">=</span> <span class="n">url</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">index</span> <span class="o">=</span> <span class="n">index</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Date</span> <span class="nf">strToDateLong</span><span class="o">(</span><span class="n">String</span> <span class="n">strDate</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">SimpleDateFormat</span> <span class="n">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">SimpleDateFormat</span><span class="o">(</span><span class="s">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="o">);</span>
+        <span class="n">ParsePosition</span> <span class="n">pos</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">ParsePosition</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="n">Date</span> <span class="n">strtodate</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">strDate</span><span class="o">,</span> <span class="n">pos</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">strtodate</span><span class="o">;</span>
     <span class="o">}</span>
 
+    <span class="cm">/**</span>
+<span class="cm">     * 时间显示</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">getTimetext</span><span class="o">(</span><span class="n">String</span> <span class="n">date</span><span class="o">)</span> <span class="o">{</span>
 
-<span class="n">实现run方法</span>
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// 获取我们回调主ui的message</span>
-        <span class="n">Message</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">handler</span><span class="o">.</span><span class="na">obtainMessage</span><span class="o">();</span>
-        <span class="k">try</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">resultTime</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">;</span>
 
-            <span class="n">Object</span> <span class="n">result</span> <span class="o">=</span> <span class="n">HttpUtil</span><span class="o">.</span><span class="na">doPost</span><span class="o">(</span><span class="n">url</span><span class="o">);/</span><span class="n">访问网络</span>
 
-            <span class="n">msg</span><span class="o">.</span><span class="na">what</span> <span class="o">=</span> <span class="n">ConstantValues</span><span class="o">.</span><span class="na">GET_NET_SUCCEED</span><span class="o">;</span>
-            <span class="n">msg</span><span class="o">.</span><span class="na">obj</span> <span class="o">=</span> <span class="n">result</span><span class="o">;</span>
-            <span class="n">msg</span><span class="o">.</span><span class="na">arg1</span> <span class="o">=</span> <span class="n">index</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClientProtocolException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">msg</span><span class="o">.</span><span class="na">what</span> <span class="o">=</span> <span class="mi">404</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">msg</span><span class="o">.</span><span class="na">what</span> <span class="o">=</span> <span class="mi">100</span><span class="o">;</span>
+        <span class="kt">long</span> <span class="n">maxTime</span> <span class="o">=</span> <span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+        <span class="kt">long</span> <span class="n">minTime</span> <span class="o">=</span> <span class="n">strToDateLong</span><span class="o">(</span><span class="n">date</span><span class="o">).</span><span class="na">getTime</span><span class="o">();</span>
+
+        <span class="c1">//秒数</span>
+        <span class="kt">long</span> <span class="n">cTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">maxTime</span> <span class="o">-</span> <span class="n">minTime</span><span class="o">)</span> <span class="o">/</span> <span class="mi">1000</span><span class="o">;</span>
+        
+        <span class="k">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">resultTime</span> <span class="o">=</span> <span class="s">&quot;刚刚&quot;</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">3600</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">resultTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">/</span> <span class="mi">60</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;分钟前&quot;</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">86400</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">resultTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">/</span> <span class="mi">3600</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;小时前&quot;</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">259200</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">resultTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">/</span> <span class="mi">86400</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;天前&quot;</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
+            <span class="n">resultTime</span> <span class="o">=</span> <span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="n">date</span><span class="o">;</span>
         <span class="o">}</span>
-        <span class="c1">// 给主ui发送消息传递数据</span>
-        <span class="n">handler</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="n">msg</span><span class="o">);</span>
+
+        <span class="k">return</span> <span class="n">resultTime</span><span class="o">;</span>
+
     <span class="o">}</span></code></pre></div>
-
-<p>恩基本也就这样了 用的时候</p>
-
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">url</span> <span class="o">=</span> <span class="n">getUrl</span><span class="o">();</span>
-    <span class="n">ThreadUtils</span> <span class="n">threadutils</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">ThreadUtils</span><span class="o">(</span><span class="n">handler</span><span class="o">,</span> <span class="n">url</span> <span class="o">,</span><span class="n">i</span><span class="o">);</span>
-    <span class="k">new</span> <span class="nf">Thread</span><span class="o">(</span><span class="n">ThreadUtils</span><span class="o">).</span><span class="na">start</span><span class="o">();</span></code></pre></div>
-
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/04/26/Android-ThreadUtils.html&text=Android ThreadUtils" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/05/06/Android-DateUtil.html&text=Android dateUtils" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/04/26/Android-ThreadUtils.html&title=Android ThreadUtils" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/05/06/Android-DateUtil.html&title=Android dateUtils" target="_blank"></a>
 </div> <!-- end #post__share -->
 
 <div id="disqus_thread"></div>
