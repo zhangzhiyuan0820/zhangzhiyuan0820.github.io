@@ -40,15 +40,17 @@
 
         <nav id="pl__container">
         
+          <a class="technology pl__all" href="/technology/2015/05/10/Others-Code.html"><span class="pl__circle"></span><span class="pl__title">如何看懂他人的代码</span><span class="pl__date">May 2015</span></a>
+        
           <a class="technology pl__all" href="/technology/2015/05/06/Android-DateUtil.html"><span class="pl__circle"></span><span class="pl__title">Android dateUtils</span><span class="pl__date">May 2015</span></a>
         
-          <a class="technology pl__all" href="/technology/2015/05/04/%E4%B8%93%E6%B3%A8%E5%8A%9B.html"><span class="pl__circle"></span><span class="pl__title">Focus</span><span class="pl__date">May 2015</span></a>
+          <a class="life pl__all" href="/life/2015/05/04/focus.html"><span class="pl__circle"></span><span class="pl__title">专注力</span><span class="pl__date">May 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/26/Android-infrastructure.html"><span class="pl__circle"></span><span class="pl__title">android 程序初期项目设计</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/26/Android-ThreadUtils.html"><span class="pl__circle"></span><span class="pl__title">Android ThreadUtils</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="technology pl__all" href="/technology/2015/04/26/Android-SameTitle.html"><span class="pl__circle"></span><span class="pl__title">Android同样的标题</span><span class="pl__date">Apr 2015</span></a>
+          <a class="technology pl__all" href="/technology/2015/04/26/Android-SameTitle.html"><span class="pl__circle"></span><span class="pl__title">Android 同样的标题</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/26/Android-Popupwindow.html"><span class="pl__circle"></span><span class="pl__title">Android Popupwindow</span><span class="pl__date">Apr 2015</span></a>
         
@@ -56,13 +58,13 @@
         
           <a class="life pl__all" href="/life/2015/04/14/main-life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="like pl__all" href="/like/2015/04/14/like-orglist.html"><span class="pl__circle"></span><span class="pl__title">喜欢的项目</span><span class="pl__date">Apr 2015</span></a>
+          <a class="like pl__all" href="/like/2015/04/14/like-orglist.html"><span class="pl__circle"></span><span class="pl__title">喜欢的开源项目</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="read pl__all" href="/read/2015/04/14/book-2015-04.html"><span class="pl__circle"></span><span class="pl__title">2015.四月 阅读书单</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="about pl__all" href="/about/2015/04/14/about-blogText.html"><span class="pl__circle"></span><span class="pl__title">博客标签测试模板</span><span class="pl__date">Apr 2015</span></a>
         
-          <a class="life pl__all" href="/life/2015/04/14/Movie-Life.html"><span class="pl__circle"></span><span class="pl__title">2015.4月笔记</span><span class="pl__date">Apr 2015</span></a>
+          <a class="life pl__all" href="/life/2015/04/14/Movie-Life.html"><span class="pl__circle"></span><span class="pl__title">喜欢的一些视频</span><span class="pl__date">Apr 2015</span></a>
         
           <a class="technology pl__all" href="/technology/2015/04/07/blog.html"><span class="pl__circle"></span><span class="pl__title">个人独立博客搭建</span><span class="pl__date">Apr 2015</span></a>
         
@@ -84,9 +86,66 @@
     <atom:link href="http://zhangzhiyuan0820.github.io/rss.xml" rel="self" type="application/rss+xml" />
     <description>小豪的博客</description>
     <language>中文</language>
-    <pubDate>Wed, 06 May 2015 20:16:25 +0800</pubDate>
-    <lastBuildDate>Wed, 06 May 2015 20:16:25 +0800</lastBuildDate>
+    <pubDate>Sun, 10 May 2015 13:03:28 +0800</pubDate>
+    <lastBuildDate>Sun, 10 May 2015 13:03:28 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>如何看懂他人的代码</title>
+      <link>http://zhangzhiyuan0820.github.io/technology/2015/05/10/Others-Code.html</link>
+      <pubDate>10 May 2015</pubDate>
+      <author>张小豪</author>
+      <guid>http://zhangzhiyuan0820.github.io/technology/2015/05/10/Others-Code</guid>
+      <description>&lt;p&gt;废话不多说:&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;三个步骤:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;找出程序开始的地方如 Main,MainActivity onCreate()&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  如安卓程序 全部都有 &#39;AndroidManifest.xml&#39;  仔细查看该文件 
+	
+  找出其中声明出来的 &#39;permission&#39; &#39;server&#39; &#39;application&#39; &#39;activity&#39; 
+ 		
+  J2EE 一般也有类似的清单文件 struts.xml  applicationContent.xml 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;尝试解读该类在程序中所处的位置,或者功能,编写类注释如果项目有的话更好&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  一般正规项目都分层次mvc 或者观察者模式、单例模式、模板方法模式等。。。。
+	
+  如果你不幸遇到我这样的呵呵..... 所有层级全都写到一个类里, 我也只能告诉你 
+	
+  尽量让代码简洁易懂 看懂整个类的功能 以及一些附属功能
+	
+  找出该类的M 复制 粘贴到最后
+	
+  找出该类的C 复制 粘贴到M 的上面 并编写单行注释力求最长类似这样
+  //--------------------------以下部分为XXX------------------------------
+	
+  剩下一些附属功能全部方最上面,依次解读该方法所实现的功能,并注释
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;从入口处开始解读 个各类的层次依赖关系&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  走到这里也就差不多了解了整个项目的60% 左右 
+	
+  剩下的就需要耐心从项目入口出解读出各个类的层级依赖关系 
+	
+  无非是 注册 登录 个人信息 发布文章 查看文章 发表评论 查看评论 退出登录 
+	
+  这是我当前项目大概的一套流程 等走完这套流程后 
+	
+  再去看一些附属功能 如点赞 关注 发送私信 等等...
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Android dateUtils</title>
@@ -152,11 +211,11 @@
     </item>
     
     <item>
-      <title>Focus</title>
-      <link>http://zhangzhiyuan0820.github.io/technology/2015/05/04/%E4%B8%93%E6%B3%A8%E5%8A%9B.html</link>
+      <title>专注力</title>
+      <link>http://zhangzhiyuan0820.github.io/life/2015/05/04/focus.html</link>
       <pubDate>04 May 2015</pubDate>
       <author>张小豪</author>
-      <guid>http://zhangzhiyuan0820.github.io/technology/2015/05/04/专注力</guid>
+      <guid>http://zhangzhiyuan0820.github.io/life/2015/05/04/focus</guid>
       <description>&lt;p&gt;我们看某些新闻,或者刷微博,知乎的时候,我们的专注力会快速转移,往往是觉得说的不错,但从来没有去思考,网络信息来的过于方便导致人们很少思考,由一个信息快速浏览到下一个信息,这样被信息轰炸的感觉很爽,还记得刚刚来到知乎的那种感觉吗?得到了什么,如果我们没有去细心思考他们所说的话,只是在看不停的刷 ,那和看微博,刷wiki有什么区别? 一句话没有中心思想,没有目标&lt;/p&gt;
 
 &lt;p&gt;人的大脑是什么我不太清楚,&lt;/p&gt;
@@ -261,7 +320,9 @@ Title Bar
 
 尽量做到UI统一可复用性强
 
-尤其是一些共同的组件 只要在项目中出现次数超过3次的都采用include 引入
+公共组建的复用 公共组建的复用 公共组建的复用 重要的事情说一百遍都不够啊
+
+尤其是一些共同的组件 只要在项目中出现次数超过3次的都采用include 引入 或直接做成view 根据项目情况看
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Adapter Items&lt;/p&gt;
@@ -382,7 +443,7 @@ BaiduLBS_Android
     </item>
     
     <item>
-      <title>Android同样的标题</title>
+      <title>Android 同样的标题</title>
       <link>http://zhangzhiyuan0820.github.io/technology/2015/04/26/Android-SameTitle.html</link>
       <pubDate>26 Apr 2015</pubDate>
       <author>张小豪</author>
@@ -1027,7 +1088,7 @@ BaiduLBS_Android
     </item>
     
     <item>
-      <title>喜欢的项目</title>
+      <title>喜欢的开源项目</title>
       <link>http://zhangzhiyuan0820.github.io/like/2015/04/14/like-orglist.html</link>
       <pubDate>14 Apr 2015</pubDate>
       <author>张小豪</author>
@@ -1056,16 +1117,6 @@ BaiduLBS_Android
 
 &lt;p&gt;同上  Android 前端UI框架&lt;/p&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>2015.四月 阅读书单</title>
-      <link>http://zhangzhiyuan0820.github.io/read/2015/04/14/book-2015-04.html</link>
-      <pubDate>14 Apr 2015</pubDate>
-      <author>张小豪</author>
-      <guid>http://zhangzhiyuan0820.github.io/read/2015/04/14/book-2015-04</guid>
-      <description>
 </description>
     </item>
     

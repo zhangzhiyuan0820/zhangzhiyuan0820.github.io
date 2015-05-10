@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android同样的标题
+title: Android 同样的标题
 category: technology
 tags:
 - 同样的标题

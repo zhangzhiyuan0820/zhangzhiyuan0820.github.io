@@ -1,6 +1,6 @@
 ---
 layout: like
-title: 喜欢的项目
+title: 喜欢的开源项目
 category: like
 tags:
 - 值得研究

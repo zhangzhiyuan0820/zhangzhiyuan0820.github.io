@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>Android dateUtils</title>
+    <title>如何看懂他人的代码</title>
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -80,68 +80,62 @@
       <div id="pjax">
         <!--这个页面是喜欢的应用页面 like -->
 <article id="post__content">
-  <h1 id="post__title" data-identifier="20150506">Android dateUtils</h1>
-  <p>时间差 :</p>
+  <h1 id="post__title" data-identifier="20150510">如何看懂他人的代码</h1>
+  <p>废话不多说:</p>
 
-<p>由于现在项目在做一个论坛类的APP</p>
+<h3 id="section">三个步骤:</h3>
 
-<p>所发送的帖子需要显示时间距离现在过了多少</p>
+<ul>
+  <li>
+    <p>找出程序开始的地方如 Main,MainActivity onCreate()</p>
 
-<p>所以顺手写了个工具类</p>
+    <pre><code>  如安卓程序 全部都有 'AndroidManifest.xml'  仔细查看该文件 
+	
+  找出其中声明出来的 'permission' 'server' 'application' 'activity' 
+ 		
+  J2EE 一般也有类似的清单文件 struts.xml  applicationContent.xml 
+</code></pre>
+  </li>
+  <li>
+    <p>尝试解读该类在程序中所处的位置,或者功能,编写类注释如果项目有的话更好</p>
 
-<p>代码注释什么的都有我在这里就不废话了</p>
+    <pre><code>  一般正规项目都分层次mvc 或者观察者模式、单例模式、模板方法模式等。。。。
+	
+  如果你不幸遇到我这样的呵呵..... 所有层级全都写到一个类里, 我也只能告诉你 
+	
+  尽量让代码简洁易懂 看懂整个类的功能 以及一些附属功能
+	
+  找出该类的M 复制 粘贴到最后
+	
+  找出该类的C 复制 粘贴到M 的上面 并编写单行注释力求最长类似这样
+  //--------------------------以下部分为XXX------------------------------
+	
+  剩下一些附属功能全部方最上面,依次解读该方法所实现的功能,并注释
+</code></pre>
+  </li>
+  <li>
+    <p>从入口处开始解读 个各类的层次依赖关系</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="cm">/**</span>
-<span class="cm">     * 将长时间格式字符串转换为时间 yyyy-MM-dd HH:mm:ss</span>
-<span class="cm">     * @param strDate</span>
-<span class="cm">     * @return</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Date</span> <span class="nf">strToDateLong</span><span class="o">(</span><span class="n">String</span> <span class="n">strDate</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">SimpleDateFormat</span> <span class="n">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">SimpleDateFormat</span><span class="o">(</span><span class="s">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="o">);</span>
-        <span class="n">ParsePosition</span> <span class="n">pos</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">ParsePosition</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
-        <span class="n">Date</span> <span class="n">strtodate</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">strDate</span><span class="o">,</span> <span class="n">pos</span><span class="o">);</span>
-        <span class="k">return</span> <span class="n">strtodate</span><span class="o">;</span>
-    <span class="o">}</span>
+    <pre><code>  走到这里也就差不多了解了整个项目的60% 左右 
+	
+  剩下的就需要耐心从项目入口出解读出各个类的层级依赖关系 
+	
+  无非是 注册 登录 个人信息 发布文章 查看文章 发表评论 查看评论 退出登录 
+	
+  这是我当前项目大概的一套流程 等走完这套流程后 
+	
+  再去看一些附属功能 如点赞 关注 发送私信 等等...
+</code></pre>
+  </li>
+</ul>
 
-    <span class="cm">/**</span>
-<span class="cm">     * 时间显示</span>
-<span class="cm">     *</span>
-<span class="cm">     * @return</span>
-<span class="cm">     */</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">getTimetext</span><span class="o">(</span><span class="n">String</span> <span class="n">date</span><span class="o">)</span> <span class="o">{</span>
-
-        <span class="n">String</span> <span class="n">resultTime</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">;</span>
-
-
-        <span class="kt">long</span> <span class="n">maxTime</span> <span class="o">=</span> <span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
-        <span class="kt">long</span> <span class="n">minTime</span> <span class="o">=</span> <span class="n">strToDateLong</span><span class="o">(</span><span class="n">date</span><span class="o">).</span><span class="na">getTime</span><span class="o">();</span>
-
-        <span class="c1">//秒数</span>
-        <span class="kt">long</span> <span class="n">cTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">maxTime</span> <span class="o">-</span> <span class="n">minTime</span><span class="o">)</span> <span class="o">/</span> <span class="mi">1000</span><span class="o">;</span>
-        
-        <span class="k">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">resultTime</span> <span class="o">=</span> <span class="s">&quot;刚刚&quot;</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">3600</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">resultTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">/</span> <span class="mi">60</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;分钟前&quot;</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">86400</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">resultTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">/</span> <span class="mi">3600</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;小时前&quot;</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">&lt;</span> <span class="mi">259200</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">resultTime</span> <span class="o">=</span> <span class="o">(</span><span class="n">cTime</span> <span class="o">/</span> <span class="mi">86400</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;天前&quot;</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-            <span class="n">date</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
-            <span class="n">resultTime</span> <span class="o">=</span> <span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="n">date</span><span class="o">;</span>
-        <span class="o">}</span>
-
-        <span class="k">return</span> <span class="n">resultTime</span><span class="o">;</span>
-
-    <span class="o">}</span></code></pre></div>
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/05/06/Android-DateUtil.html&text=Android dateUtils" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2015/05/10/Others-Code.html&text=如何看懂他人的代码" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/05/06/Android-DateUtil.html&title=Android dateUtils" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2015/05/10/Others-Code.html&title=如何看懂他人的代码" target="_blank"></a>
 </div> <!-- end #post__share -->
 
 <div id="disqus_thread"></div>
