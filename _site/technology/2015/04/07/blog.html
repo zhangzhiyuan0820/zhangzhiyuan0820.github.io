@@ -72,6 +72,8 @@
         
           <a class="technology pl__all" href="/technology/2015/03/08/Android-Environment.html"><span class="pl__circle"></span><span class="pl__title">Android Environment</span><span class="pl__date">Mar 2015</span></a>
         
+          <a class="technology pl__all" href="/technology/2015/03/08/Android-CSDN.html"><span class="pl__circle"></span><span class="pl__title">CSDN2015年以前的博客</span><span class="pl__date">Mar 2015</span></a>
+        
         </nav>
       </div> <!-- end #posts-list -->
     </aside> <!-- end #sidebar -->
@@ -201,109 +203,123 @@
 <p>接再来我们需要安装博客框架: 
 我这个是在Windows 上安装 Jekyll</p>
 
-<h3 id="ruby">安装 Ruby</h3>
+<!--
 
-<p>前往 <a href="http://rubyinstaller.org/downloads/">这里</a></p>
+###安装 Ruby
 
-<p><img src="\assets\img\blog_img\p.png" alt="" /></p>
+前往 [这里](http://rubyinstaller.org/downloads/)
 
-<p>去下载 对应系统下的ruby 文件 以及对应的系统DevKit 安装包。 例如，DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe      适用于64位 Windows 系统上的 
+ ![](\assets\img\blog_img\p.png)
+ 
+去下载 对应系统下的ruby 文件 以及对应的系统DevKit 安装包。 例如，DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe      适用于64位 Windows 系统上的 
 Ruby 2.2.1 x64。
-然后安装 Ruby</p>
+然后安装 Ruby 
 
-<p>将鼠标移动到之前下载好的Ruby包上</p>
+将鼠标移动到之前下载好的Ruby包上
 
-<p>快速点击两下你鼠标的左键</p>
+快速点击两下你鼠标的左键
 
-<p>O(∩_∩)O哈哈~</p>
+O(∩_∩)O哈哈~
 
-<p><img src="\assets\img\blog_img\q.png" alt="" /></p>
-
-<p>下一步到这个按钮时要小心一些 官方文档中说不要使用带有空格的文件夹 这里
+ ![](\assets\img\blog_img\q.png)
+ 
+下一步到这个按钮时要小心一些 官方文档中说不要使用带有空格的文件夹 这里
 我安装了一次结果不行 我选的默认路径 结果还是找不到 于是我就残暴的选择了
-C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PAHT 意思是安装过程中自动帮你把 Ruby 添加到环境变量中去</p>
+C:\Ruby 这样的一个路径 建议大家也这么做 之后点击Add…your PAHT 意思是安装过程中自动帮你把 Ruby 添加到环境变量中去 
 
-<p>然后就是下一步</p>
 
-<p>安装成功之后 在开始那里搜索栏输入 cmd 并打开
+
+然后就是下一步
+ 
+
+
+安装成功之后 在开始那里搜索栏输入 cmd 并打开
  输入 ruby –v 查看是否安装成功 
 输出  ruby 2.2.1p85 (2015-02-26 revision 49769) [x64-mingw32] 
-则安装成功</p>
+则安装成功
 
-<p>接下来</p>
+接下来
 
-<h3 id="devkit">安装DevKit</h3>
+###安装DevKit
 
-<p>就是之前叫你下载ruby 时所下载的DevKit文件 
+就是之前叫你下载ruby 时所下载的DevKit文件 
 没有则返回去下载当前系统版本的DevKit文件
 运行安装包并解压缩至某文件夹，如 C:\DevKit
 重新打开cmd
 输入
 cd “C:\DevKit”
 ruby dk.rb init
-notepad config.yml</p>
+notepad config.yml
 
-<p>和我这样加入 - :\Ruby 路径 记得要有 ”-”</p>
+和我这样加入 - :\Ruby 路径 记得要有 ”-” 
 
-<p><img src="\assets\img\blog_img\r.png" alt="" /></p>
+![](\assets\img\blog_img\r.png)
 
-<p>然后保存退出
-在cmd 里输出</p>
 
-<p>ruby dk.rb review 
+然后保存退出
+在cmd 里输出 
+
+ruby dk.rb review 
 ruby dk.rb install
 这两句代码的意思是 
-审查 和 安装。</p>
+审查 和 安装。
 
-<h3 id="jekyll">安装 Jekyll</h3>
+###安装 Jekyll
 
-<p>为保证gem 已经安装
-在cmd 里输入</p>
+为保证gem 已经安装
+在cmd 里输入
 
-<p>gem –v</p>
+gem –v
 
-<p>如图所示</p>
+如图所示
 
-<p><img src="\assets\img\blog_img\s.png" alt="" /></p>
+![](\assets\img\blog_img\s.png)
+  
+然后就是安装jekyll 继续输入
 
-<p>然后就是安装jekyll 继续输入</p>
+gem install jekyll
 
-<p>gem install jekyll</p>
 
-<h3 id="jekyll--">下载jekyll  主题</h3>
+###下载jekyll  主题 
 
-<p><a href="https://www.google.com/?gws_rd=ssl#q=jekyll+%E4%B8%BB%E9%A2%98">Google一下</a> 一大堆
-随便下 一般都是这个格式 如下图:</p>
+[Google一下](https://www.google.com/?gws_rd=ssl#q=jekyll+%E4%B8%BB%E9%A2%98) 一大堆
+随便下 一般都是这个格式 如下图:
+ 
 
-<p><img src="\assets\img\blog_img\y.png" alt="" /></p>
+![](\assets\img\blog_img\y.png)
+ 
+我目前这个是使用3-Jekyll 的一个延伸版本
 
-<p>我目前这个是使用3-Jekyll 的一个延伸版本</p>
 
-<p><a href="http://jekyllthemes.org/">jekyll Themes</a>
-这个网站也有很多主题 你可以下载 当然也可以用我现在这个</p>
+[jekyll Themes](http://jekyllthemes.org/)
+这个网站也有很多主题 你可以下载 当然也可以用我现在这个
 
-<p>下载好后 解压缩 到你的github 项目目录下 如图我这个</p>
+下载好后 解压缩 到你的github 项目目录下 如图我这个
 
-<p><img src="\assets\img\blog_img\u.png" alt="" /></p>
 
-<p>如果想要使用这个主题的话需要更改一些参数
+![](\assets\img\blog_img\u.png)
+ 
+如果想要使用这个主题的话需要更改一些参数
 1.删除.gitignore   .git 
-2.更改 _config.yml</p>
+2.更改 _config.yml 
 
-<p><img src="\assets\img\blog_img\x.png" alt="" /></p>
+![](\assets\img\blog_img\x.png)
 
-<p>更改后就可以粘贴了</p>
+更改后就可以粘贴了
 
-<p>粘贴前记得删除你之前项目里的文件</p>
+粘贴前记得删除你之前项目里的文件
 
-<p>同步到云端 然后 输入你之前的那个地址 类似这</p>
+同步到云端 然后 输入你之前的那个地址 类似这
+ 
+![](\assets\img\blog_img\v.png)
 
-<p><img src="\assets\img\blog_img\v.png" alt="" /></p>
+之后是本地更改和调试blog
+进入你jekyll工程所在的目录 jekyll server 启动服务 
 
-<p>之后是本地更改和调试blog
-进入你jekyll工程所在的目录 jekyll server 启动服务</p>
+![](\assets\img\blog_img\w.png)
 
-<p><img src="\assets\img\blog_img\w.png" alt="" /></p>
+-->
+<p><a href="http://blog.csdn.net/kong5090041/article/details/38408211">安装 Jekyll </a></p>
 
 <p>这是成功的案例 在本地浏览器里输入 图片中server address : 后面的 http://127.0.0.1:4000/
 然后就可以本地调试你的博客了 记得之后 同步到云端</p>
